@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import "_mixins/font-face";
+
+@include font-face("DrugsRegular", "../fonts/DrugsRegular/DrugsRegular");
+@include font-face("ChampionsRegular", "../fonts/ChampionsRegular/ChampionsRegular");
+@include font-face("ChampionsBold", "../fonts/ChampionsBold/ChampionsBold");

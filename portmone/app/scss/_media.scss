@@ -1,0 +1,375 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px){
+	.block-delivery .holder-delivery{
+		.hold-img{
+			height: 400px;
+	    	width: 450px;
+	    	top: 0;
+			right: 0;
+		}
+		.box-delivery {
+		    width: 50%;
+		}
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px){
+	#main {
+	    padding: 0 0 40px;
+	}
+	#main-bottom{
+		padding: 50px 0 0;
+	}
+	#header{
+		padding: 10px 0;
+		.logo{
+			font: 50px/50px $drugs-regular;
+		}
+		.box-tel .tel {
+		    font: 28px/34px $champions-regular;
+		}
+	}
+	.block-product {
+	    margin: 0 0 120px;
+	}
+	.holder-product .hold-img {
+		width: 475px;
+		height: 450px;
+	}
+	.holder-product .top{
+		font: 32px/34px $drugs-regular;
+		padding: 25px 22px;
+		.top-year {
+		    font: 20px/22px $champions-bold;
+		    letter-spacing: 2px;
+		    margin: 0;
+		}
+	}
+	.box-advantages {
+	    padding: 0 10px;
+	    margin: 0 0 10px;
+	    .title-advantages{
+	    	font: 20px/24px $main-font;
+	    }
+	}	
+	.block-advantages,
+	.block-order{
+	    margin: 0 0 40px;
+	    .holder-order{
+	    	justify-content: center;
+	    }
+	}
+	.box-order{
+		width: auto;
+		padding: 0 10px;
+		.input-order {
+			max-width: 230px;
+		    height: 60px;
+		    padding: 14px 15px;
+		}
+	}
+	.block-description {
+	    margin: 0 0 50px;
+	    .holder-description .hold-img {
+		    float: none;
+		    width: 100%;
+		    padding: 20px 100px;
+		}
+		.holder-description .box-description {
+		    float: none;
+		    width: 100%;
+		    padding: 0 0 20px;
+		}
+		.wrap-description{
+			padding: 25px;
+			margin: 0;
+			.box-description{
+				padding: 0;
+				&:last-child{
+					padding: 0 0 0 20px;
+				}
+			}
+		}
+	}
+	.block-our .holder-our{
+		margin: 0 0 30px;
+	}
+	#main-bottom{
+		background-size: contain;
+	}
+	.block-delivery .holder-delivery{
+		padding: 65px 0 50px;
+		.hold-img{
+			height: 350px;
+	    	width: 400px;
+		}
+		.box-delivery {
+		    width: 45%;
+		}
+	}
+	.box-our {
+	    width: 50%;
+	}
+	.block-view .holder-view{
+		padding: 0;
+	}
+	.box-wiev{
+		max-width: 100%;
+		margin: 0 0 20px;
+		&:after, &:before{
+			display: none;
+		}
+	}
+	.block-plan{
+		margin: 0 0 20px;
+		.holder-plan{
+			padding: 0;
+		}
+	}
+	.box-plan {
+	    width: 50%;
+	    margin: 0 0 20px;
+	}
+	#footer {
+	    padding: 50px 0 25px;
+	    &:after{
+	    	height: 75px;
+	    }
+	    .block-order {
+		    margin: 0 0 50px;
+		}
+	}
+	h1,
+	h2 .sub{
+	    font: 50px/54px $drugs-regular;
+	}
+	.block-product .holder-title .title-product,
+	h2,
+	h3{
+		font: 30px/32px $champions-regular;
+	}
+	.block-product .holder-title .sub-title{
+		font: 24px/24px $champions-regular;
+		span{
+			font: 24px/24px $champions-bold;
+		}
+	}
+	.btn{
+		font:700 18px/20px $main-font;
+		padding: 12px 20px;
+	}
+	.block-order .btn {
+	    padding: 12px 24px;
+	}
+	#main .block-order{
+		display: none;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+	#header{
+		text-align: center;
+		.logo{
+			float: none;
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 0 10px;
+		}
+		.box-tel{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			float: none;
+			max-width: 100%;
+			.tel,
+			.tel span{
+				font: 18px/24px $champions-regular;
+			}
+			.tel-link{
+				padding: 0;
+			}
+		}
+	}
+	.block-product,
+	.block-product .holder-title{
+		margin: 0 0 30px;
+	}
+	.holder-product{
+		text-align: center;
+	    width: 100%;
+	    padding: 0;
+	    .top{
+	    	top: 0;
+	    	right: 0;
+	    }
+	    .hold-img{
+			position: static;
+			top: auto;
+			right: auto;
+			width: 375px;
+		    height: 350px;
+		    margin: 0 auto 30px;
+			transform: translateY(0);
+		}
+		.box-price {
+			padding: 15px;
+		    border: 5px solid #fff;
+		    font: 22px/24px $champions-regular;
+		    margin: 0 0 40px;
+		    .price{
+		    	font: 42px/46px $drugs-regular;
+		    }
+		}
+	}
+	.block-description .box-description{
+		float: none;
+		width: 100%;
+		margin: 0 0 20px;
+	}
+	.block-description .wrap-description .box-description:last-child {
+    	padding: 0;
+	}
+	.block-description .wrap-description .title-description {
+	    font: 26px/26px $champions-regular;
+	}
+	.block-gallery .holder-gallery .box-gallery{
+		width: 50%;
+	}
+	.block-delivery{
+		.holder-title h3{
+			text-align: center;
+			max-width: 100%;
+			width: 100%;
+		}
+		.holder-title .box-pay{
+			display: none;
+		}
+		.holder-delivery{
+			padding: 15px 0 20px;
+			.hold-img{
+				position: static;
+				float: none;
+				height: 300px;
+		    	width: 345px;
+		    	margin: 0 auto 20px;
+			}
+			.box-delivery {
+				float: none;
+			    width: 100%;
+			}
+		}
+	}
+	.box-advantages {
+	    width: 50%;
+	}
+	.box-plan .hold-img {
+	    height: 80px;
+	    margin: 0 auto;
+	}
+	h1,
+	h2 .sub{
+	    font: 36px/40px $drugs-regular;
+	    letter-spacing: 2px;
+	}
+	.block-product .holder-title .title-product{
+		font: 24px/26px $champions-regular;
+		letter-spacing: 10px;
+	}
+	h2, h3 {
+	    font: 24px/26px $champions-regular;
+	    letter-spacing: 5px;
+	}
+	.block-product .holder-title .title-product span {
+	    padding: 0 8px;
+	}
+	.block-our h3 {
+	    margin: 0 0 30px;
+	}
+	.btn {
+	    border: 5px solid $yellow-color;
+	}    
+}
+
+/* Small Devices, Phones */
+@media only screen and (max-width : 540px){
+	#header .logo{
+		font: 40px/42px $drugs-regular;
+	}
+	#header .box-tel{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.block-product .holder-title .title-product{
+		font: 16px/20px $champions-regular;
+	}
+	h1{
+		margin: 0 0 5px;
+	}
+	h1, h2 .sub {
+	    font: 24px/28px $drugs-regular;
+	}
+	.block-description .wrap-description {
+	    border: 6px solid rgba(255,255,255,.1);
+	    padding: 10px 15px;
+	}
+	.block-description .holder-description .hold-img {
+		padding: 20px 25px;
+	}
+	.block-delivery .holder-delivery .hold-img {
+		width: 280px;
+	    height: 255px;
+	}
+	.holder-product .hold-img {
+	    width: 280px;
+	    height: 265px;
+	}
+	.block-gallery .holder-gallery .box-gallery{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.box-advantages,
+	.box-our,
+	.box-plan{
+	    width: 100%;
+	}
+	.box-wiev .hold-wiev{
+		padding: 20px 20px 10px;
+		.hold-img{
+			display: none;
+		}
+	}
+	.box-order {
+	    width: 100%;
+	    padding: 0;
+	    .input-order {
+		    max-width: 100%;
+		}
+	}
+	h2 .sub {
+	    margin: 5px 0 0;
+	}
+	.holder-product .top {
+	    font: 20px/22px $drugs-regular;
+	    padding: 18px 14px;
+	    .top-year{
+	    	font: 18px/22px $champions-bold;
+	    }
+	}
+	.block-product .holder-title .sub-title {
+	    font: 20px/22px $champions-regular;
+	    span{
+	    	font: 20px/22px $champions-bold;
+	    }
+	}
+	#main-bottom {
+    	background-position: 50% 36%;
+	}
+}

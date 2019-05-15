@@ -1,0 +1,56 @@
+$font-path: "../fonts/";
+$font-thin: $font-path + "montserrat-thin-webfont";
+$font-light: $font-path + "montserrat-light-webfont";
+$font-regular: $font-path + "montserrat-regular-webfont";
+$font-bold: $font-path + "montserrat-bold-webfont";
+
+@font-face {
+	font-family: 'montserratthin';
+	src: url( $font-thin + '.eot');
+	src: url( $font-thin + '.eot?#iefix') format('embedded-opentype'),
+		 url( $font-thin + '.woff2') format('woff2'),
+		 url( $font-thin + '.woff') format('woff'),
+		 url( $font-thin + '.ttf') format('truetype'),
+		 url( $font-thin + '.svg#helveticaregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'montserratlight';
+	src: url( $font-light + '.eot');
+	src: url( $font-light + '.eot?#iefix') format('embedded-opentype'),
+		 url( $font-light + '.woff2') format('woff2'),
+		 url( $font-light + '.woff') format('woff'),
+		 url( $font-light + '.ttf') format('truetype'),
+		 url( $font-light + '.svg#helveticaregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'montserratregular';
+	src: url( $font-regular + '.eot');
+	src: url( $font-regular + '.eot?#iefix') format('embedded-opentype'),
+		 url( $font-regular + '.woff2') format('woff2'),
+		 url( $font-regular + '.woff') format('woff'),
+		 url( $font-regular + '.ttf') format('truetype'),
+		 url( $font-regular + '.svg#helveticaregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'montserratbold';
+	src: url( $font-bold + '.eot');
+	src: url( $font-bold + '.eot?#iefix') format('embedded-opentype'),
+		 url( $font-bold + '.woff2') format('woff2'),
+		 url( $font-bold + '.woff') format('woff'),
+		 url( $font-bold + '.ttf') format('truetype'),
+		 url( $font-bold + '.svg#helveticaregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$font-family-thin: 'montserratthin' , arial, helvetica, sans-serif;
+$font-family-light: 'montserratlight' , arial, helvetica, sans-serif;
+$font-family-regular: 'montserratregular' , arial, helvetica, sans-serif;
+$font-family-bold: 'montserratbold' , arial, helvetica, sans-serif;
+

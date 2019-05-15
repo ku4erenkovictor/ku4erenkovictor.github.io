@@ -1,0 +1,401 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1800px){
+	h2 .white {
+	    padding: 0 75px 0 0;
+	}
+}
+
+@media only screen and (max-width : 1600px){
+	h1, h2, .slider-title{
+		font: 150px/168px $Anton;
+	}
+	.main-slider .slider-item .holder-slider{
+		padding: 175px 0 0;
+	}
+	.block-products{
+		.container {
+		    max-width: 1300px;
+		}
+		.slider-item {
+		    padding: 0 50px;
+		}
+		.slick-arrow{
+			background-position: 25% 50%;
+			top: 32%;
+			height: 150px;
+    		width: 150px;
+		}
+	}
+	h2 .white {
+	    padding: 0;
+	}
+	.block-our h2 {
+	    margin: 0 0 20px;
+	}
+	.block-product {
+	    padding: 135px 0 145px;
+	    .product-slider {
+		    top: 80px;
+		}
+		.big-text{
+			font: 300px/300px $MrDafoe;
+		}	
+	}
+}
+
+@media only screen and (max-width : 1366px){  
+	h1, h2, .slider-title{
+		font: 100px/118px $Anton;
+	}
+	h3{
+		font: 100px/100px $MrDafoe;
+	}
+	.main-slider .slider-item .holder-slider {
+		height: auto;
+	    padding: 120px 0 0;
+	}
+	.slider-title .title .indent, h1 .title .indent, h2 .title .indent {
+	    padding: 0 25px;
+	}
+	.slider-title {
+	    margin: 0 0 -20px;
+	}
+	.main-slider .hold-slider .btn {
+	    margin: 0 0 50px;
+	}
+	.block-products {
+		padding: 50px 0 0;
+		.products-slider{
+			padding: 0 35px;
+		}
+		.slider-item {
+		    padding: 0 20px;
+		}
+		.slider-box .hold-img{
+			box-shadow: 0 10px 25px rgba(0,0,0,.2);
+			margin: 0 0 35px;
+		}
+		.slider-box .product-title {
+		    font: 20px/22px $MontserratBold;
+		}
+		.slick-arrow {
+		    background-position: 25% 50%;
+		    top: 32%;
+		    height: 85px;
+		    width: 85px;
+		}
+		.slick-prev {
+		    left: -35px;
+		}
+		.slick-next {
+		    right: -35px;
+		}
+	}
+	.block-our {
+	    padding: 50px 0 75px;
+	    .box-our{
+	    	width: 48%;
+		    float: right;
+		    padding: 0;
+	    	.our-text {
+			    padding: 0 0 0 20px;
+			}
+			.our-name {
+			    font: 60px/60px $MrDafoe;
+			}
+	    }
+	}
+	p {
+	    margin: 0 0 15px;
+	}
+	.block-about{
+		height: auto;
+		padding: 50px 0;
+		.container .holder-btn {
+		    margin: 30px 0 0;
+		}
+	}
+	.block-product {
+	    padding: 135px 0 100px;
+	    h2{
+	    	text-align: center;
+	    }
+	    .box-product{
+	    	padding: 0 0 0 20px;
+	    	.holder-btn {
+			    margin: 40px 0 0;
+			}
+	    }
+		.big-text{
+			font: 225px/225px $MrDafoe;
+			bottom: -55px;
+		}	
+	}
+	.block-product .slick-slider .slick-prev {
+	    right: 100px;
+	}
+	.block-product .slick-slider .slick-next{
+		bottom: -82px;
+	}
+	.block-product .slick-slider .slick-next{
+		width: 100px;
+    	height: 100px;
+    	svg {
+		    width: 50px;
+		    height: 60px;
+		}
+	}
+	.main-slider .slick-prev,
+	.main-slider .slick-next{
+		display: none!important;
+	}
+	.main-slider .slick-dots{
+		top: 50%;
+		right: 50px;
+		transform: translateY(-50%);
+		li{
+			margin: 0 0 30px;
+			button{
+				height: 25px;
+    			width: 25px;
+			}
+		}
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px){
+	h1, h2, .slider-title{
+		font: 72px/90px $Anton;
+	}
+	h3{
+		font: 70px/70px $MrDafoe;
+		margin: 0 0 30px;
+	}
+	.main-slider .slider-item .holder-slider {
+	    padding: 75px 0 0;
+	}
+	.slider-title .title .indent, h1 .title .indent, h2 .title .indent {
+	    padding: 0 15px;
+	}
+	.main-slider .hold-slider h3 {
+	    margin: 0 0 30px;
+	}
+	.main-slider .hold-slider .btn {
+	    margin: 0 0 30px;
+	}
+	.btn{
+		font: 18px/18px $MontserratBlack;
+		padding: 20px 40px;
+	}
+	.block-product .box-product .holder-btn .btn {
+	    padding: 20px;
+	}
+	.slider-title {
+	    margin: 0;
+	}
+	.main-slider .hold-slider .hold-icon {
+	    height: 50px;
+	    width: 38px;
+	}
+	.main-slider:after{
+		height: 85px;
+	}
+	.block-product{
+		text-align: center;
+		padding: 50px 0 100px;
+		.product-slider{
+			position: relative;
+			width: 100%;
+			margin: 0 auto 50px;
+			top: auto;
+			left: auto;
+		}
+		.box-product{
+			float: none;
+			width: 100%;
+			padding: 0;
+			.holder-btn {
+			    margin: 25px 0 0;
+			}
+		}
+		.big-text{
+			width: 100%;
+			font: 125px/125px $MrDafoe;
+			right: 50%;
+			bottom: -25px;
+			transform: translateX(50%);
+		}
+	}
+	body {
+	    font-size: 16px;
+	    line-height: 30px;
+	}
+	h2 .white {
+	    color: $dark-gray-color;
+	}
+	.block-our{
+		padding: 50px 0;
+		.hold-img {
+		    position: static;
+		    margin: 0 auto 30px;
+		    top: auto;
+		    left: auto;
+		}
+		.box-our {
+			text-align: center;
+			float: none;
+		    width: 100%;
+		    .our-text {
+			    padding: 0;
+			    margin: 0 0 20px;
+			}
+			.our-name {
+			    font: 40px/40px $MrDafoe;
+			}
+			.our-profession {
+			    font: 18px/22px $MontserratBold;
+			    padding: 0;
+			}
+		}
+	}
+	.block-product .slick-slider .slick-prev {
+	    right: 65px;
+	    bottom: 0;
+	}
+	.block-product .slick-slider .slick-next{
+		bottom: 0;
+	}
+	.block-product .slick-slider .slick-next {
+	    width: 65px;
+	    height: 65px;
+	    svg {
+		    width: 30px;
+		    height: 40px;
+		    vertical-align: bottom;
+		}
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+	h1, h2, .slider-title{
+		font: 52px/70px $Anton;
+	}
+	h3{
+		font: 50px/50px $MrDafoe;
+	}
+	.slider-title .title .indent, h1 .title .indent, h2 .title .indent {
+	    padding: 0 10px;
+	}
+	.main-slider .slider-item .holder-slider {
+	    padding: 50px 50px 0;
+	}
+	.main-slider .hold-slider h3 {
+	    margin: 0 0 20px;
+	}
+	.btn {
+	    font: 16px/16px $MontserratBlack;
+		padding: 15px 20px;
+		letter-spacing: 5px;
+    	text-indent: 5px;
+	}
+	.block-products .slider-item {
+	    margin: 0;
+	}
+	.block-product .box-product .holder-btn .btn {
+	    padding: 15px;
+	}
+	.main-slider .slick-dots{
+		right: 20px;
+		li{
+			margin: 0 0 20px;
+			button{
+				height: 20px;
+	    		width: 20px;
+	    		border: 2px solid $gray-color;
+			}
+		}
+	}
+}
+
+/* Small Devices, Phones */
+@media only screen and (max-width : 540px){
+	h1, .slider-title{
+		font: 36px/44px $Anton;
+	}
+	h2{
+		font: 24px/30px $Anton;
+		margin: 0 0 20px;
+		.title .indent{
+			padding: 0 8px;
+		}
+	}
+	h3{
+		font: 40px/40px $MrDafoe;
+	}
+	.main-slider .hold-slider .hold-icon {
+	    height: 40px;
+	    width: 30px;
+	}
+	.main-slider:after {
+	    height: 70px;
+	}
+	.block-products {
+	    padding: 30px 0 0;
+	    .products-slider {
+		    padding: 0 25px;
+		}
+	    .slick-arrow{
+	    	background-size: 18px 18px;
+	    	height: 70px;
+    		width: 70px;
+	    }
+	    .slider-box .hold-img {
+		    margin: 0 auto 25px;
+		}
+	}
+	.block-our {
+	    padding: 30px 0;
+	}
+	.block-about {
+	    padding: 30px 0;
+	}
+	.block-product{
+		padding: 30px 0 65px;
+		.big-text{
+			font: 70px/70px $MrDafoe;
+			bottom: -15px;
+		}
+	}
+	.block-product .slick-slider .slick-prev{
+		right: 50px;
+	}
+	.block-product .slick-slider .slick-prev,
+	.block-product .slick-slider .slick-next{
+	    width: 50px;
+	    height: 50px;
+	    svg {
+		    width: 20px;
+		    height: 30px;
+		}
+	}
+	.main-slider .slick-dots li{
+		margin: 0 0 10px;
+		button{
+			height: 15px;
+	    	width: 15px;
+	    	border: 2px solid $gray-color;
+		}
+	}
+}	
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+	
+}

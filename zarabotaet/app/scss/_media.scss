@@ -1,0 +1,536 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width : 1700px){
+	#nav {
+	    left: 40px;
+	}
+	#footer{
+		.container{
+			max-width: 1320px;
+			padding: 0 20px;
+			&:before{
+				left: -270px;
+			}
+			&:after{
+				right: -525px;
+			}
+		}
+		.box-footer:before{
+			left: 20px;
+		}
+		.box-map:before{
+			right: 270px;
+		}
+	}
+	.box-bottom{
+		min-height: 90px;
+		font: 46px/32px KazmannSans;
+		&:after{
+			border: 120px solid transparent;
+		    border-bottom: 120px solid #e42c34;
+		    border-left: 120px solid #e42c34;
+		}
+	}
+	#footer .copyright {
+	    right: 100px;
+	    bottom: 30px;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1500px){
+	#nav{
+		top: 42px;
+	}
+	#nav.open{
+	    top: 80px;
+	}
+	.toogle-menu{
+		height: 60px;
+		width: 80px;
+		span{
+			height: 8px;
+		}
+		.c{
+			top: 27px;
+		}
+		.b{
+			top: 52px;
+		}
+	}
+	#header{
+		top: 50px;
+		.container {
+		    padding: 0 35px 0 150px;
+		}
+	}
+	.block-repairs{
+		min-height: auto;
+		padding: 125px 0 80px;
+		margin: 0 0 15px;
+	}
+	.tel {
+	    font: 40px/40px RobotoBlack;
+	}
+	.block-repairs .arrow,
+	.block-repairs h2:after,
+	.block-support:after,
+	.block-services:after{
+		display: none;
+	}
+	.block-support{
+		min-height: auto;
+		padding: 80px 0;
+		.hold-title {
+		    max-width: 650px;
+		}
+	}
+
+	h2,
+	.block-support .hold-title h2 {
+	    font: 200px/120px KazmannSans;
+	}
+	.slick-next{
+		right: -40px;
+	}
+	.slick-prev{
+		left: -40px;
+	}
+	.slick-next, .slick-prev{
+		height: 40px;
+		width: 40px;
+	}
+}
+
+@media only screen and (max-width : 1366px){
+	.block-licenses .holder-licenses .hold-license{
+		padding: 0 20px;
+	}
+	.block-services{
+		padding: 50px 0 0;
+    	margin: 0 0 50px;
+		.box-service{
+			padding: 0 20px 0 150px;
+			.hold-img{
+				margin: 0 0 0 -150px;
+			}
+		}
+	}
+	.block-services .box-service .hold-img {
+	    height: 100px;
+	    max-width: 100px;
+	}
+	.block-services .box-service .title-service{
+		padding: 0;
+	}
+	.menu-title{
+		display: none;
+	}
+	.text-center .text-inner .text-last{
+		padding: 0;
+	}
+	#footer{
+    	padding: 50px 0 0;
+		.container:before,
+		.container:after,
+		.box-map:before{
+			display: none;
+		}
+		.tel{
+			margin: 0 0 20px;
+		}
+		.address{
+			margin: 0 0 15px;
+		}
+		.box-footer{
+			margin: 0 0 30px;
+			&:before,
+			&:after{
+				display: none;
+			}
+		}
+		.box-map{
+			margin: 0;
+		}
+	}
+	.btn,
+	.btn-tel{
+		padding: 25px 50px;
+	}
+	#nav.open .toogle-menu {
+	    left: auto;
+	    top: -60px;
+	    right: 20px;
+	}
+	.menu{
+		text-align: center;
+	}
+	.nav-holder{
+		background: $red-color;
+		&:before,
+		&:after{
+			display: none;
+		}
+		.text-center .text-inner {
+		    padding: 0;
+		}
+	}
+	.block-services .box-hide{
+		left: 115px;
+	}
+}
+
+@media only screen and (max-width : 1200px){
+	.menu li {
+	    font: 40px/40px Roboto,arial,helvetica,sans-serif;
+	    margin: 0 0 30px;
+	    a:hover{
+			font: 40px/40px $RobotoBlack;
+		}
+	}
+	.block-consultation .hold-title{
+		text-align: center;
+		float: none;
+		max-width: 100%;
+	}
+	.block-consultation .hold-img{
+		float: none;
+		margin: 0 auto;
+	}
+	.block-support .hold-title,
+	.block-support .hold-text{
+		float: none;
+		max-width: 100%;
+		padding: 0;
+	}
+	.block-licenses {
+	    margin: 0 0 100px;
+	}
+	.block-support .holder-btn{
+		text-align: center;
+	}
+	#footer .box-footer {
+	    max-width: 100%;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px){
+	#wrapper{
+		padding: 0;
+	}
+	#nav {
+		top: 25px;
+	    left: 20px;
+	    &.open{
+	    	top: 25px;
+	    }
+	}
+	.toogle-menu {
+	    width: 30px;
+	    height: 17px;
+	    span{
+	    	height: 3px;
+	    }
+	    .c{
+	    	top: 7px;
+	    }
+	    .b{
+	    	top: 14px;
+	    }
+	}
+	#nav.open .toogle-menu{
+		height: 17px;
+		width: 30px;
+		top: 0;
+		span{
+			height: 3px;
+		}
+		.t{
+			top: 6px
+		}
+	    .b{
+	    	top: 6px;
+	    }
+	}
+	#header{
+		top: 20px;
+		.container {
+		    padding: 0 20px 0 70px;
+		}
+		.logo{
+			float: right;
+			margin: 0 0 10px;
+		}
+		.hold-tel{
+			float: none;
+		    max-width: 100%;
+		    width: 100%;
+		}
+	}
+	h1{
+		font: 40px/40px ImperialOne;
+	}
+	.menu li {
+	    font: 32px/32px Roboto,arial,helvetica,sans-serif;
+	    margin: 0 0 20px;
+	    a:hover{
+			font: 32px/32px $RobotoBlack;
+		}
+	}
+	.block-support .hold-title h2, h2 {
+	    font: 125px/140px KazmannSans;
+	    margin: 0 0 20px;
+	}
+	.block-repairs{
+		font: 18px/30px Roboto,arial,helvetica,sans-serif;
+		padding: 125px 0 35px;
+		min-height: 475px;
+		.hold-text{
+			padding: 0;
+		}
+	}
+	.block-repairs, .block-support{
+		border: none;
+	}
+	.box-bottom{
+		display: none;
+	}
+	.block-support{
+		padding: 0 0 35px;
+		.holder-support {
+		    margin: 0 0 30px;
+		}
+	}
+	.block-licenses{
+		margin: 0 0 20px;
+		&:after{
+			display: none;
+		}
+		h2{
+			margin: 0 0 30px;
+		}
+	}
+	h3 {
+	    font: 85px/95px KazmannSans;
+	    margin: 0 0 20px;
+	}
+	.block-consultation{
+		padding: 20px 0 0;
+	}
+	.block-licenses .holder-licenses .hold-license{
+		width: 50%;
+		margin: 0 0 40px;
+	}
+	.block-licenses .holder-licenses{
+		justify-content: center;
+		.box-license {
+			width: 100%;
+			max-width: 325px;
+		    margin: 0 auto;
+		}
+	}
+	.block-services{
+		padding: 0;
+		margin: 0;
+		h2{
+			margin: 0 0 40px;
+		}
+		.holder-services{
+			margin: 0;
+		}
+		.box-service{
+			width: 100%;
+			padding: 0 0 0 100px;
+			.hold-img {
+			    height: 75px;
+			    max-width: 75px;
+			    margin: 0 0 0 -100px;
+			}
+			.title-service br{
+				display: none;
+			}
+		}
+	}
+	.block-services .box-hide{
+		left: 0;
+	}
+	.btn{
+		font: 24px/24px RobotoCondensedLight;
+		padding: 20px 35px;
+	}
+	.btn-tel{
+		padding: 17px 35px;
+	}
+	p {
+	    margin: 0 0 15px;
+	}
+	.tel {
+	    font: 34px/34px RobotoBlack;
+	}
+	#footer{
+		padding: 0;
+		h3 {
+		    margin: 0 0 15px;
+		}
+		.address {
+		    font: 24px/30px Roboto,arial,helvetica,sans-serif;
+		    margin: 0 0 10px;
+		}
+		.box-map {
+		    margin: 0 -20px;
+		}
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+	h1 {
+	    font: 34px/34px ImperialOne;
+	}
+	.block-repairs {
+	    min-height: auto;
+	}
+	.block-services .box-service{
+		padding: 0 0 0 70px;
+		margin: 0;
+		.hold-img {
+		    height: 50px;
+		    max-width: 50px;
+		    margin: 0 0 0 -70px;
+		}
+	}
+	.block-support .hold-title h2, h2 {
+	    font: 85px/95px KazmannSans;
+	}
+	.block-services h2 {
+	    margin: 0 0 25px;
+	}
+	h3 {
+	    font: 70px/80px KazmannSans;
+	}
+}
+
+@media only screen and (max-width : 650px){
+	.block-licenses .holder-licenses .hold-license {
+	    width: 100%;
+	    padding: 0;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 540px){
+	h1 {
+	    font: 28px/28px ImperialOne;
+	} 
+	.block-repairs{
+		background-position: 0 0;
+	}
+	.block-support .hold-title h2, h2 {
+	    font: 60px/70px KazmannSans;
+	    padding: 20px 0 0;
+	}
+	.block-licenses h2{
+		padding: 0;
+	}
+	h3 {
+	    font: 55px/60px KazmannSans;
+	}
+	.block-services .box-service{
+		padding: 0 0 0 50px;
+		.hold-img {
+		    height: 35px;
+		    max-width: 35px;
+		    margin: 0 0 0 -50px;
+		}
+		.title-service {
+		    font: 32px/32px KazmannSans;
+		}
+	}
+	.btn {
+	    font: 20px/20px RobotoCondensedLight;
+	    padding: 15px 30px;
+	}
+	.btn-tel{
+		margin: 0 0 20px;
+	}
+	.tel {
+	    font: 26px/30px RobotoBlack;
+	    margin: 0;
+	}
+	.block-consultation .hold-img {
+	    width: 75%;
+	}
+	#footer .address {
+	    font: 18px/30px Roboto,arial,helvetica,sans-serif;
+	}
+	#footer .link {
+	    font: 40px/40px KazmannSans;
+	}
+	#footer .box-map{
+		padding: 0 0 80%;
+	}
+	.box-modal{
+		width: 280px;
+		&:before{
+			display: none;
+		}
+		.box-modal_close {
+		    top: 15px;
+		    right: 15px;
+		}
+		.hold-modal .btn{
+			padding: 20px;
+		}
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 480px){
+	.block-support .hold-title h2, h2 {
+	    font: 48px/52px KazmannSans;
+	}
+	h3 {
+	    font: 44px/50px KazmannSans;
+	}
+	.btn {
+	    font: 17px/17px RobotoCondensedLight;
+	}
+	.btn-tel {
+	    padding: 9px 35px;
+	}
+	#footer h3 {
+	    padding: 10px 0 0;
+	}
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 1024px){
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+
+}

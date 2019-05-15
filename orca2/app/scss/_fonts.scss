@@ -1,0 +1,7 @@
+@import "_mixins/font-face";
+
+@include font-face("AvenirLight", "../fonts/AvenirLight/AvenirNextCyr-Light");
+@include font-face("Avenir", "../fonts/Avenir/Avenir");
+@include font-face("AvenirLTStdHeavy", "../fonts/AvenirLTStdHeavy/AvenirLTStdHeavy");
+@include font-face("LuloClean", "../fonts/LuloClean/LuloCleanOneBold");
+@include font-face("PoppinsSemiBold", "../fonts/PoppinsSemiBold/PoppinsSemiBold");

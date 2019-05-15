@@ -1,0 +1,591 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1366px){
+	#header{
+		padding: 20px 0 0;
+		.logo{
+			width: 250px;
+		}
+		.tel {
+		    font: 40px/42px "Times New Roman",arial,helvetica,sans-serif;
+		    margin: 0 0 0 20px;
+		}
+	}
+	.block-main{
+		padding: 140px 20px 0;
+		.btn {
+		    margin: 0 0 100px;
+		}
+	}
+	h1 {
+	    font: 125px/125px $DepositProLight;
+	    margin: 0 0 50px;
+	    .sub-title{
+			font: 34px/36px $BebasNeueBold;
+			letter-spacing: 8px;
+		}
+	}
+	h2{
+		font: 50px/50px $BebasNeueBold;
+		margin: 0 0 50px;
+	}
+	.block-advantages{
+		padding: 60px 0 0;
+    	margin: 0;
+		.hold-left {
+		    height: 635px;
+		    width: 375px;
+		}
+		.hold-right {
+		    height: 395px;
+		    width: 375px;
+		}
+		.list-advantages li {
+			font: 20px/30px $SfuiDisplayBold;
+		    padding: 70px 25px 0;
+		    margin: 0 0 60px;
+		    &:before{
+		    	top: 60%;
+		    	font: 220px/220px $BebasNeueLight;
+		    }
+		}
+	}
+	.block-products{
+		padding: 60px 0;
+		.holder-products{
+			margin: 0 0 20px;
+		}
+	}
+	.hold-product {
+	    min-height: 385px;
+	    padding: 0 10px;
+	}
+	.box-product .hold-img{
+		height: 200px;
+	}
+	.box-product .title-product{
+		font: 25px/30px $SfuiDisplayLight;
+	}
+	.block-description{
+		padding: 60px 0 30px;
+	}
+	.box-description {
+		min-height: 335px;
+	    padding: 75px 10px 20px;
+	    .hold-img{
+	    	max-width: 180px;
+	    }
+	    .check {
+		    margin: 0 auto 30px;
+		}
+	    .title-description{
+	    	font: 20px/30px $SfuiDisplayBold;
+	    }
+	}
+	.block-offer {
+	    padding: 60px 0 0;
+	   	.container {
+		    max-width: 700px;
+		}
+	    .hold-left {
+		    height: 215px;
+    		width: 235px;
+		}
+		.hold-right {
+		    height: 200px;
+   			width: 250px;
+		}
+	}
+	h3 {
+		font: 50px/50px $DepositProLight;
+	    margin: 0 0 50px;
+	}
+	.block-about{
+		padding: 60px 0 30px;
+		.title {
+		    font: 20px/26px $SfuiDisplayBold;
+		}
+		.sub-title {
+			font: 20px/26px $main-font;
+		    margin: 0 0 30px;
+		}
+	}
+	.block-slider{
+		padding: 60px 0;
+		h2 {
+		    margin: 0 0 50px;
+		}
+		.slider-item{
+			margin: 0;
+		    .slider-title {
+			    margin: 0 0 20px;
+			}
+			.slider-text {
+			    font: 20px/30px $main-font;
+			}
+		}
+	}
+	.block-questions {
+	    padding: 60px 0 0;
+	    h3 {
+		    font: 50px/50px $DepositProLight;
+		}
+	    .container .hold-img {
+		    height: 380px;
+		}
+		.container .box-tel .tel {
+		    font: 50px/50px $BebasNeueBold;
+		    span{
+		    	font: 36px/36px $BebasNeueBold;
+		    }
+		}
+		.container .box-tel .link{
+			font: 20px/20px $SfuiDisplayBold;
+			margin: 20px 0 0;
+		}
+
+	}
+	#footer {
+	    padding: 30px 0;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px){
+	/* menu */
+	.toogle-menu{
+		position: absolute;
+	    top: 24px;
+	    right: 25px;
+	}
+	.nav-holder {
+	    display: none;
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    top: 0;
+	    background: $green-color;
+	    width: auto;
+	    height: 100vh;
+	    z-index: 60;
+	    text-align: center;
+	    padding: 0 28px;
+	    .text-center {
+		    height: 100vh;
+		}
+	}
+	.toogle-menu {
+	    display: block;
+	}
+	#header .wrap {
+	    position: static;
+	}
+	.menu {
+		float: none;
+		width: 100%;
+		display: block;
+		padding: 0;
+	    margin: 0;
+	    li{
+	    	display: block;
+    		position: static;
+    		a{
+    			color: $text-color;
+    			&:before{
+    				display: none;
+    			}
+    		}
+    		&:first-child{
+    			margin: 0 0 15px;
+			}
+    		&:last-child{
+    			padding: 0;
+    			margin: 0 0 15px;    		
+    		}
+    		.open &{
+    			opacity: 1;
+			    -webkit-transform: none;
+			        -ms-transform: none;
+			            transform: none;
+    		}
+    		&:nth-child(5){
+				-webkit-transition-delay: 250ms, 250ms;
+		        -o-transition-delay: 250ms, 250ms;
+		        transition-delay: 250ms, 250ms;
+    		}
+    		&:nth-child(4){
+    			-webkit-transition-delay: 200ms, 200ms;
+		        -o-transition-delay: 200ms, 200ms;
+		        transition-delay: 200ms, 200ms;
+    		}
+    		&:nth-child(3){
+    			-webkit-transition-delay: 150ms, 150ms;
+         		-o-transition-delay: 150ms, 150ms;
+            	transition-delay: 150ms, 150ms;
+    		}
+    		&:nth-child(2){
+    			-webkit-transition-delay: 100ms, 100ms;
+         		-o-transition-delay: 100ms, 100ms;
+            	transition-delay: 100ms, 100ms;
+    		}
+    		&:nth-child(1){
+    			-webkit-transition-delay: 50ms, 50ms;
+         		-o-transition-delay: 50ms, 50ms;
+            	transition-delay: 50ms, 50ms;
+    		}
+	    }
+	    li, li.last{
+	    	float: none;
+		    position: relative;
+		    margin: 0 0 15px;
+		    opacity: 0;
+		    -webkit-transform: scale(1.1) translateY(-50px);
+		        -ms-transform: scale(1.1) translateY(-50px);
+		            transform: scale(1.1) translateY(-50px);
+		    -webkit-transition: opacity 0.35s ease-out 0s, -webkit-transform 0.35s ease-out 0s;
+		    transition: opacity 0.35s ease-out 0s, -webkit-transform 0.35s ease-out 0s;
+		    -o-transition: opacity 0.35s ease-out 0s, transform 0.35s ease-out 0s;
+		    transition: opacity 0.35s ease-out 0s, transform 0.35s ease-out 0s;
+		    transition: opacity 0.35s ease-out 0s, transform 0.35s ease-out 0s, -webkit-transform 0.35s ease-out 0s;
+		    -webkit-transition-delay: 300ms, 300ms;
+		         -o-transition-delay: 300ms, 300ms;
+		            transition-delay: 300ms, 300ms;
+	    }
+	}
+	/* menu */
+	
+	.block-main .btn{
+		margin: 0 0 75px;
+	}
+	h1 {
+	    font: 100px/100px $DepositProLight;
+	    .sub-title{
+			font: 22px/24px $BebasNeueBold;
+			letter-spacing: 5px;
+		}
+	}
+	.btn, .block-offer .btn, .block-questions .container .box-questions .btn{
+		font: 24px/24px $BebasNeueBold;
+		padding: 20px 30px;
+	}
+	.block-advantages{
+		padding: 35px 0 0;
+	    .hold-left {
+		    height: 400px;
+    		width: 235px;
+		}
+		.hold-right {
+			top: 0;
+		    height: 235px;
+		    width: 225px;
+		}
+		.list-advantages{
+			align-items: center;
+		    li {
+			    font: 18px/22px $SfuiDisplayBold;
+			    padding: 55px 10px 0;
+			    margin: 0 0 40px;
+			    &:before{
+			    	font: 170px/170px $BebasNeueLight;
+			    }
+			}
+		}
+	}
+	h2 {
+	    font: 40px/40px $BebasNeueBold;
+	    margin: 0 0 30px;
+	}
+	.block-products {
+	    padding: 35px 0;
+	    .holder-products {
+	    	margin: 0 -10px;
+		}
+	}
+	.hold-product {
+		width: 50%;
+	    min-height: 360px;
+	    margin: 0 0 20px;
+	}
+	.box-product .title-product {
+	    font: 20px/24px $SfuiDisplayLight;
+	}
+	.box-description{
+		width: 50%;
+	}
+	h3 {
+	    font: 34px/36px $DepositProLight;
+	    margin: 0 0 30px;
+	}
+	.block-offer{
+		padding: 35px 0 0;
+		.container {
+		    max-width: 575px;
+		}
+		.holder-inputs{
+			margin: 0;
+		}
+		.hold-left {
+		    height: 165px;
+		    width: 180px;
+		}
+		.hold-right {
+		    height: 145px;
+		    width: 185px;
+		}
+	}
+	.block-about {
+	    padding: 35px 0 0;
+	    h2 {
+		    margin: 0 0 20px;
+		}
+		.title {
+			font: 18px/24px $SfuiDisplayBold;
+		    padding: 0;
+		}
+		.sub-title {
+		    font: 18px/24px $main-font;
+		}
+		.title, .sub-title, p {
+		    margin: 0 0 15px;
+		}
+	}
+	.block-slider {
+	    padding: 35px 0;
+	    h2 {
+		    margin: 0 0 30px;
+		}
+		.slider-item .hold-img {
+		    margin: 0 auto 25px;
+		}
+	}
+	.block-questions {
+		text-align: center;
+	    padding: 35px 0 20px;
+	    h3 {
+		    font: 34px/36px $DepositProLight;
+	    	margin: 0 0 30px;
+		}
+	    .container{
+	    	display: block;
+	    	.box-questions{
+	    		max-width: 100%;
+	    	}
+	    	.hold-img{
+	    		height: 250px;
+	    		width: 200px;
+	    		margin: 10px auto 20px;
+	    	}
+	    	.box-tel{
+	    		text-align: center;
+	    		padding: 0;
+	    		margin: 0 auto;
+	    		.tel {
+				    font: 36px/36px $BebasNeueBold;
+				    span{
+				    	font: 28px/28px $BebasNeueBold;
+				    }
+				}
+				.link{
+					margin: 10px 0 20px;
+				}
+	    	}
+	    }
+	}
+	#footer{
+		margin: 0;
+		.footer-logo {
+		    width: 125px;
+		    height: 45px;
+		}
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+	.block-main .btn {
+	    margin: 0 0 50px;
+	}
+	h1 {
+	    font: 80px/80px $DepositProLight;
+	    margin: 0 0 30px;
+	    .sub-title{
+			font: 28px/30px $BebasNeueBold;
+			padding: 10px 0 0;
+		}
+	}
+	.btn, .block-offer .btn, .block-questions .container .box-questions .btn{
+		font: 18px/18px $BebasNeueBold;
+		letter-spacing: 2px;
+		padding: 14px;
+	}
+	.arcticmodal-container_i2 {
+		padding: 20px;
+	}
+	.box-modal{
+		padding: 40px 20px 20px;
+		.box-modal_close {
+		    position: absolute;
+		    top: 10px;
+		    right: 10px;
+		    height: 25px;
+		    width: 25px;
+		    &:before, &:after{
+		    	background: $dark-black-color;
+			    width: 25px;
+			    top: 12px;
+			    left: 0px;
+			}    
+		}
+		.sub-title-modal{
+			padding: 0;
+		}
+	}
+	h2 {
+	    font: 34px/36px $BebasNeueBold;
+	    letter-spacing: 7px;
+	}
+	h3 {
+	    font: 30px/34px $DepositProLight;
+	}
+	.hold-product {
+	    min-height: 315px;
+	}
+	.box-product .hold-img {
+	    height: 150px;
+	}
+	.block-advantages .list-advantages li{
+		width: 50%;
+		&:before{
+			top: 70%;
+			font: 140px/140px $BebasNeueLight;
+		}
+	}
+
+
+
+
+	.block-description {
+	    padding: 35px 0 0;
+	}
+	.box-description{
+		min-height: 300px;
+		padding: 50px 10px 20px;
+	    .hold-img {
+		    max-width: 150px;
+		}
+		.title-description {
+		    font: 18px/24px $SfuiDisplayBold;
+		}
+	}
+	.block-about .hold-img,
+	.block-advantages .hold-left,
+	.block-advantages .hold-right,
+	.block-offer .hold-left,
+	.block-offer .hold-right{
+		display: none;
+	}
+	.block-slider .slider-item .slider-text {
+	    font: 18px/24px $main-font;
+	}
+	.block-questions .container .hold-img {
+	    height: 200px;
+	    width: 160px;
+	    margin: 10px auto 20px;
+	}
+	
+}
+
+/* Small Devices, Phones */
+@media only screen and (max-width : 540px){
+	#header{
+		.container{
+			text-align: center;
+			display: block;
+		}
+		.logo {
+		    width: 200px;
+		    height: 80px;
+		}
+		#nav, .tel{
+			margin: 0;
+		}
+		.tel {
+		    font: 32px/34px "Times New Roman",arial,helvetica,sans-serif;
+		}
+	}
+	.block-main {
+	    padding: 160px 20px 0;
+	    .btn{
+	    	margin: 0 0 20px;
+	    }
+	}
+	h1 {
+	    font: 42px/44px $DepositProLight;
+	    margin: 0 0 30px;
+	    .sub-title{
+			font: 24px/28px $BebasNeueBold;
+			padding: 10px 0 0;
+		}
+	}
+	h2 {
+	    font: 30px/34px $BebasNeueBold;
+	    letter-spacing: 3px;
+	}
+	h3 {
+	    font: 26px/30px $DepositProLight;
+	}
+	.block-questions h3 {
+	    font: 30px/34px $DepositProLight;
+	}
+	.box-modal {
+	    width: 100%;
+	    .title-modal{
+	    	font: 22px/24px $BebasNeueBold;
+	    	letter-spacing: 3px;
+	    	margin: 0 0 10px;
+	    }
+	    .sub-title-modal {
+		    margin: 0 0 15px;
+		}
+		.hold-modal{
+			padding: 20px 0 0;
+		}
+	}
+	.block-advantages .list-advantages li{
+		width: 100%;
+		margin: 0 0 50px;
+	}
+	.hold-product {
+	    width: 100%;
+	}
+	.block-slider .slider-item .hold-img {
+	    height: 125px;
+	    width: 125px;
+	}
+	.block-offer .holder-inputs {
+	    flex-direction: column;
+	    .box-input {
+		    max-width: 100%;
+		    margin: 0 0 20px;
+		}
+	}
+	#footer{
+		padding: 20px 0;
+	    .footer-logo {
+		    width: 100px;
+		    height: 35px;
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+	.box-description {
+	    width: 100%;
+	}
+}

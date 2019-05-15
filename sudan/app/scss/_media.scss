@@ -1,0 +1,708 @@
+@import "vars";
+
+@media only screen and (max-width : 1501px){
+	.block-main{
+		.logo {
+		    top: 40px;
+		    left: 40px;
+		}
+		.icon-bottom {
+		    left: 40px;
+		    bottom: 40px;
+		    &.right{
+		    	left: auto;
+		    	right: 40px;
+		    	bottom: 40px;
+		    }
+		}
+	}
+	#nav {
+	    top: 90px;
+	    right: 75px;
+	}
+	.menu {
+	    padding: 75px 0 0;
+	    li, li.last{
+			margin: 0 0 20px;
+		}
+	}
+	.nav-holder{
+		padding: 0 230px;
+	}
+	h1, h2{
+		font: 85px/95px $main-font;
+	}
+	h1 {
+	    margin: 0 auto 20px;
+	}
+	.block-documentation .holder-title{
+		padding: 0 0 0 80px;
+		.hold-img {
+		    max-width: 50px;
+		    margin: 5px 0 0 -80px;
+		}
+	}
+	.holder-project .list-project{
+		font: 36px/50px $JosefinSansLight;
+		.item-project{
+			strong {
+			    font: 36px/50px $JosefinSansBold;
+			}
+		}
+	}
+	.block-gold .paralax-left,
+	.block-map .left-paralax{
+	    left: 30px;
+	}
+	.block-gold .paralax-right{
+	    right: 30px;
+	}
+	.block-news .holder-news{
+		margin: 0 -20px 30px;
+	}
+	.block-news:before {
+	    height: 400px;
+	    top: -200px;
+	}
+}
+
+@media only screen and (max-width : 1367px){
+	h1, h2{
+		font: 76px/86px $main-font;
+	}
+	h3 {
+	    font: 30px/36px $JosefinSansBold;
+	}
+	.block-main{
+		.logo {
+		    height: 80px;
+		    width: 74px;
+		}
+		.icon-bottom {
+		    font: 28px/30px $JosefinSansLight;
+		    padding: 12px 0 12px 55px;
+		    .hold-icon {
+			    height: 54px;
+			    width: 44px;
+			}
+		}
+	}
+	.toogle-menu:after {
+		height: 110px;
+		width: 110px;
+	}
+	#nav{
+		top: 75px;
+    	right: 50px;
+		&.open .toogle-menu {
+			height: 120px;
+    		width: 120px;
+    		top: -60px;
+		    right: -30px;
+		    span{
+		    	height: 3px;
+		    }
+		}
+	}
+	li, li.last{
+		margin: 0 0 15px;
+	}
+	.open .toogle-menu .t,
+	.open .toogle-menu .b{
+    	top: 60px;
+    }
+	.nav-holder {
+		padding: 0 170px;
+	    &:after {
+		    height: 1500px;
+		    width: 1500px;
+		    right: -750px;
+		}
+	}
+
+	.btn {
+	    padding: 24px 50px 30px;
+	}
+	.block-project{
+		margin: 0 0 80px;
+		.holder-text {
+		    font: 26px/40px $JosefinSansLight;
+		    strong{
+		    	font: 26px/40px $JosefinSansBold;
+		    }
+		}
+	}
+	.block-token{
+		margin: 0 0 80px;
+		.list-token li {
+		    padding: 32px 0 45px;
+		    margin: 0 0 30px;
+		}
+	}
+	.block-faq .list-faq .item-faq .title-faq{
+		padding: 30px 85px 30px 35px;
+		&:after{
+			right: 35px;
+		}
+	}
+	.block-documentation {
+	    margin: 0 0 80px;
+	}
+	.block-map{
+		margin: 0 0 100px;
+		.list-map{
+			font: 28px/34px $JosefinSansThin;
+			li{
+				.box-date:after{
+					background-size: contain;
+					width: 50px;
+				}
+				&:nth-child(odd) .box-date {
+				    padding: 0 70px 0 20px;
+				    &:after{
+				    	right: 10px;
+				    }
+				}
+				&:nth-child(even) .box-date {
+				    padding: 0 20px 0 70px;
+				    &:after{
+				    	left: 10px;
+				    }
+				}
+			}
+		}
+	}
+	.block-team {
+	    margin: 0 0 60px;
+	}
+	.holder-project .list-project{
+		font: 28px/40px $JosefinSansLight;
+		.item-project{
+			strong {
+			    font: 28px/40px $JosefinSansBold;
+			}
+			&:first-child{
+				padding: 0 160px 0 0;
+			}
+			&:not(:last-child):after {
+			    background-size: cover;
+			    height: 45px;
+			    width: 55px;
+			}
+		}
+	}
+	.block-news {
+	    margin: 0 0 80px;
+	}
+	.block-media {
+	    margin: 0 0 90px;
+	}
+	.block-gallery {
+	    margin: 0 0 85px;
+	}
+}
+
+@media only screen and (max-width : 1201px){
+	.holder-project .list-project{
+		text-align: center;
+		flex-direction: column;
+		.item-project{
+			max-width: 575px;
+			width: 100%;
+			padding: 0 0 70px;
+			margin: 0 auto 20px;
+			&:first-child,
+			&:last-child{
+				max-width: 575px;
+				width: 100%;
+				margin: 0 auto 20px;
+			}
+			&:first-child{
+				padding: 0 0 70px;
+			}
+			&:last-child{
+				padding: 0;
+			}
+			&:not(:last-child):after{
+				top: auto;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%) rotate(90deg);
+			}
+		}
+	}
+	.block-media .holder-media,
+	.block-our .holder-our{
+		justify-content: center;
+		.item-media img, .item-our img,{
+			max-width: 200px;
+		}
+	}
+	.modal-text {
+	    font: 26px/36px $JosefinSansLight;
+	    padding: 0 85px;
+	    strong {
+		    font: 26px/36px $JosefinSansBold;
+		}
+	}
+	.mfp-content{
+		max-width: 500px;
+	}
+}
+
+@media only screen and (max-width : 1025px){
+	.main-line1,
+	.main-line2,
+	.main-line3,
+	.block-project .project-img,
+	.block-news:before{
+		display: none;
+	}
+	.block-gold{
+		background-image: none;
+	}
+	.box-news.white,
+	.block-gallery .item-big:after, .block-gallery .item-small:after{
+		box-shadow: none;
+	}
+	h1, h2, .block-gold .holder-gold .title-gold{
+		font: 64px/70px $main-font;
+	}
+	h3 {
+	    font: 26px/30px $JosefinSansBold;
+	}
+	.sub-title {
+	    font: 30px/40px $JosefinSansLight;
+	}
+	.block-main {
+	    min-height: 600px;
+	}
+	.block-documentation{
+		margin: 0 0 40px;
+		.holder-title {
+		    margin: 0 0 20px;
+		}
+		.box-documentation{
+			width: 100%;
+			&:last-child {
+			    padding: 0;
+			}	
+		}
+	}
+	h2 .sub {
+	    display: inline;
+	    margin: 0;
+	}
+	#nav .text-center {
+	    text-align: center;
+	    .text-inner {
+		    vertical-align: middle;
+		}
+	}
+	.nav-holder {
+		height: 100vh;
+		background: rgba(20,4,0,.8);
+	    padding: 0 20px;
+	    &:after{
+	    	display: none;
+	    }
+	}
+	.menu{
+		padding: 0;
+		li{
+			margin: 0 0 15px;
+			a {
+			    font: 18px/22px $JosefinSansLight;
+			}
+		}
+	}
+	.btn {
+		font: 18px/18px $JosefinSansBold;
+	    padding: 18px 30px 22px;
+	}
+	.block-map{
+		margin: 0 0 70px;
+	}
+	.block-team{
+		margin: 0 0 20px;
+		.holder-team {
+		    padding: 15px 0 0;
+		}
+		.title-team {
+		    font: 24px/26px $JosefinSansLight;
+		    margin: 0 0 35px;
+		}
+		.box-team .team-name {
+		    font: 18px/24px $JosefinSansBold;
+		}
+	}
+	.block-team .box-team .team-ico {
+	    font: 16px/20px $main-font;
+	}
+	.block-team .box-team .team-ico,
+	.block-team .box-team .team-name {
+	    margin: 0 0 15px;
+	}
+	.block-news{
+		margin: 0 0 40px;
+		.holder-news{
+			padding: 20px 0 0;
+		}
+	}
+	.block-news .box-news .title-news {
+	    font: 18px/24px $JosefinSansBold;
+	    margin: 0 0 10px;
+	}
+	.block-news .box-news.white .text-news{
+		padding: 20px;
+	}
+	.block-gold .holder-gold .title-gold{
+		opacity: 0.8;
+	}
+	.block-gold .paralax-left,
+	.block-gold .paralax-right,
+	.block-map .left-paralax,
+	.block-map .right-paralax{
+		display: none;
+	}
+	.block-token {
+	    margin: 0 0 50px;
+	}
+	.block-media{
+		margin: 0 0 25px;
+		.holder-media {
+		    padding: 0;
+		}
+	}
+	.block-gallery {
+	    margin: 0 0 50px;
+	    .holder-gallery {
+		    margin: 0 0 40px;
+		}
+	}
+	.block-faq{
+		margin: 0 0 60px;
+		.list-faq {
+		    padding: 20px 0 0;
+		}
+	}
+	.block-our{
+		margin: 0 0 20px;
+		.holder-our {
+		    padding: 15px 0 0;
+		    margin: 0 0 30px;
+		}
+	}
+	.block-project {
+	    margin: 0 0 50px;
+	}
+	#footer{
+		padding: 30px 0 0;
+		.footer-holder{
+			justify-content: center;
+			padding: 25px 0 0;
+		}
+	}
+}
+
+@media only screen and (max-width : 769px){
+	h1, h2, .block-gold .holder-gold .title-gold{
+		font: 54px/62px $main-font;
+	}
+	h3 {
+	    font: 22px/26px $JosefinSansBold;
+	}
+	.sub-title {
+	    font: 24px/30px $JosefinSansLight;
+	}
+	.btn {
+	    padding: 16px 20px 20px;
+	}
+	.block-main{
+    	min-height: 480px;
+		.logo {
+		    height: 50px;
+		    width: 45px;
+		    top: 20px;
+    		left: 20px;
+		}
+		.icon-bottom {
+		    font: 18px/22px $JosefinSansLight;
+		    padding: 10px 0 10px 45px;
+		    left: 20px;
+    		bottom: 20px;
+    		&.right{
+    			left: auto;
+    			right: 20px;
+    			bottom: 20px;
+    		}
+		    .hold-icon {
+			    height: 40px;
+			    width: 34px;
+			}
+		}
+	}
+	#nav {
+	    top: 45px;
+    	right: 30px;
+	    &.open .toogle-menu {
+		    height: 50px;
+		    width: 50px;
+		    top: -20px;
+		    right: -5px;
+		}
+	}
+	.menu li{
+		margin: 0 0 10px;
+		a {
+			font: 16px/20px $JosefinSansLight;
+			letter-spacing: 1px;
+		}
+	}
+	.toogle-menu {
+	    font: 12px/12px $JosefinSansBold;
+	    letter-spacing: 2px;
+	    &:after{
+	    	height: 70px;
+    		width: 70px;
+	    	border: 2px solid #fff;
+	    }
+	}
+	.open .toogle-menu .t,
+	.open .toogle-menu .b{
+    	top: 25px;
+    }
+	.btn {
+		font: 16px/16px $JosefinSansBold;
+	}
+	.block-project{
+		padding: 25px 0 0;
+		.holder-text {
+		    font: 22px/30px $JosefinSansLight;
+		    margin: 0 0 50px;
+		    strong{
+		    	font: 22px/30px $JosefinSansBold;
+		    }
+		}
+	}
+	.block-gold .holder-gold .box-gold {
+	    padding: 10px 0;
+	}
+	.block-gold .holder-gold .sign-gold {
+	    font: 55px/55px $main-font;
+	}
+	.block-team{
+		.holder-team {
+		    justify-content: center;
+		}
+		.title-team {
+		    font: 20px/22px $JosefinSansLight;
+		}
+		.box-team{
+			width: 50%;
+		}
+	}
+	.block-token .list-token {
+	    font: 18px/20px $JosefinSansBold;
+	    li {
+		    padding: 25px 0 35px;
+		    margin: 0 0 10px;
+		}
+	}
+	.block-news .holder-news .hold-news{
+		width: 50%;
+	}
+	.block-gallery .item-big,
+	.block-gallery .box-gallery{
+	    width: 100%;
+	}
+	.block-map .list-map{
+		font: 24px/30px $JosefinSansThin;
+		padding: 0 0 0 50px;
+		&:before{
+			top: 0;
+			left: 0;
+			bottom: 0;
+			transform: translateX(0);
+		}
+		li{
+			padding: 0;
+			&:nth-child(odd) .box-date {
+			    text-align: left;
+			    width: 100%;
+			    padding: 0 0 0 20px;
+			    &:after{
+			    	right: auto;
+			    	left: -40px;
+			    }
+			}
+			&:nth-child(even) .box-date {
+			    text-align: left;
+			    width: 100%;
+			    padding: 0 0 0 20px;
+			    &:after{
+			    	left: -40px;
+			    }
+			}
+		}
+	}
+	.holder-project .list-project {
+	    font: 22px/30px $JosefinSansLight;
+	    .item-project{
+	    	padding: 0 0 50px;
+	    	&:first-child{
+				padding: 0 0 50px;
+			}
+	    	&:not(:last-child):after {
+			    height: 30px;
+			    width: 38px;
+			}
+			 strong {
+			    font: 22px/30px $JosefinSansBold;
+			}
+	    }
+	}
+	.block-our .holder-our .hold-item{
+		width: 50%;
+		.item-our {
+		    height: 175px;
+		}
+	}
+	.block-documentation h3{
+		letter-spacing: 4px;
+    	text-indent: 4px;
+	}
+	.block-documentation .holder-title{
+		padding: 0 0 0 50px;
+		.hold-img {
+		    max-width: 35px;
+		    margin: 5px 0 0 -50px;
+		}
+	}
+	.block-documentation .list-documentation li .item-documentation{
+		padding: 0 0 0 50px;
+		.item-text{
+			margin: 12px 0;
+		}
+		.hold-icon {
+		    max-width: 35px;
+		    margin: 0 0 0 -50px;
+		}
+	}
+	.modal-text {
+	    font: 18px/26px $JosefinSansLight;
+	    strong{
+	    	font: 18px/26px $JosefinSansBold;
+	    }
+	}
+	.mfp-content{
+		max-width: 375px;
+		padding: 0 0 35px;
+	}
+
+	
+}
+
+@media only screen and (max-width : 541px){
+	h1, h2, .block-gold .holder-gold .title-gold{
+		font: 42px/50px $main-font;
+	}
+	.block-gold .holder-gold .sign-gold {
+	    font: 40px/40px $main-font;
+	}
+	.block-team .box-team {
+	    width: 100%;
+	}
+	.block-gallery .box-gallery .item-small {
+	    width: 100%;
+	}
+	.block-token .list-token li{
+		letter-spacing: 1px;
+	}
+	.block-news .holder-news .hold-news{
+		width: 100%;
+	}
+	.block-faq .list-faq {
+		font: 16px/26px $main-font;
+		.item-faq .title-faq {
+		    font: 18px/24px $main-font;
+		    padding: 25px 50px 25px 20px;
+		    &:after {
+			    height: 20px;
+	    		width: 12px;
+			    background-size: cover;
+			    margin: -10px 0 0;
+			    right: 15px;
+			}
+		}
+		.item-faq .wrap-faq {
+		    padding: 0 20px;
+		}
+	}
+	.block-main .icon-bottom{
+		font: 14px/18px $JosefinSansLight;
+    	padding: 4px 0 4px 25px;
+    	left: 10px;
+    	&.right{
+    		left: auto;
+    		right: 10px;
+    	}
+    	.hold-icon {
+		    height: 25px;
+		    width: 20px;
+		}
+	}
+	.block-map .list-map {
+	    font: 22px/26px $JosefinSansThin;
+	    li p {
+		    font: 16px/30px $main-font;
+		}
+	}
+	.block-our .holder-our .hold-item{
+		width: 80%;
+		.item-our {
+		    height: 150px;
+		}
+	}
+}
+
+@media only screen and (max-width : 481px){
+	h2, .block-gold .holder-gold .title-gold{
+		font: 34px/42px $main-font;
+	}
+	.block-documentation .holder-title .hold-img {
+	    margin: 0 0 0 -50px;
+	}
+	.modal-text {
+	    padding: 0 70px;
+	}
+	.block-map .list-map{
+		padding: 0;
+		li:nth-child(odd) .box-date,
+		li:nth-child(even) .box-date{
+			padding: 0;
+			&:after{
+				display: none;
+			}
+		}
+		&:before{
+			display: none;
+		}
+	}
+	
+}
+
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	h1, h2{
+	    background: none;
+	    color: #fcb250;
+	}
+	.block-gold .holder-gold .title-gold {
+		background: none;
+	    color: #fcb250;
+	    &:hover{
+	    	background: none;
+	    	color: #fcb250;
+	    }
+	}
+ }

@@ -1,0 +1,6 @@
+@import "_mixins/font-face";
+
+@include font-face("PlayfairDisplayRegular", "../fonts/PlayfairDisplayRegular/PlayfairDisplayRegular");
+@include font-face("JosefinSansThin", "../fonts/JosefinSansThin/JosefinSansThin");
+@include font-face("JosefinSansLight", "../fonts/JosefinSansLight/JosefinSansLight");
+@include font-face("JosefinSansBold", "../fonts/JosefinSansBold/JosefinSansBold");

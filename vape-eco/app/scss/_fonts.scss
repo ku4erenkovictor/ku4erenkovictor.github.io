@@ -1,0 +1,8 @@
+@import "_mixins/font-face";
+
+@include font-face("SfuiDisplayRegular", "../fonts/SfuiDisplayRegular/SfuiDisplayRegular");
+@include font-face("SfuiDisplayLight", "../fonts/SfuiDisplayLight/SfuiDisplayLight");
+@include font-face("SfuiDisplayBold", "../fonts/SfuiDisplayBold/SfuiDisplayBold", bold);
+@include font-face("DepositProLight", "../fonts/DepositProLight/DepositProLight");
+@include font-face("BebasNeueLight", "../fonts/BebasNeueLight/BebasNeueLight");
+@include font-face("BebasNeueBold", "../fonts/BebasNeueBold/BebasNeueBold", bold);
