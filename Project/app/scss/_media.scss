@@ -1,0 +1,92 @@
+@import "vars";
+
+@media only screen and (max-width : 1024px){
+	.box-project {
+	    width: calc(25% - 30px);
+	    padding: 20px 10px;
+	}
+	.holder-inputs .hold-inputs{
+		margin: 0 -20px 15px;
+		.box-input {
+		    width: 50%;
+		    padding: 0 20px;
+		}
+	}
+}
+
+@media only screen and (max-width : 768px){
+	.holder-title {
+	    margin: 25px 0 20px;
+	}
+	.title-h1{
+		font: 26px/30px $ProximaNovaBold;
+	}
+	.input-label {
+	    margin: 0 10px 5px 0;
+	}
+	.box-project {
+	    width: calc(50% - 30px);
+	}
+	.holder-inputs {
+	    padding: 20px 25px 5px;
+	    .hold-buttons{
+	    	justify-content: center;
+	    }
+	}
+	.hold-buttons .btn {
+		padding: 8px 20px;
+		margin: 0 6px;
+	}
+}
+
+@media only screen and (max-width : 580px){
+	.container {
+	    padding: 0 10px;
+	}
+	.table-projects__col,
+	.table-projects__col:nth-child(2),
+	.table-projects__col:nth-child(3){
+		width: 33.3%;
+	}
+	.table-projects__col {
+		display: flex;
+    	align-items: center;
+    	font: 14px/18px $main-font;
+	    padding: 13px 8px 6px;
+	}
+	.input-label {
+	    width: 12px;
+	    height: 12px;
+	    &:before,
+	    &:after{
+		    width: 12px;
+	    	height: 12px;
+	   	}
+	   	&:after{
+	   		background-size: 10px 6px;
+	   	}
+	}
+	.table-projects{
+		margin: 0 0 30px;
+	}
+	.holder-projects {
+	    margin: 0 -15px 15px;
+	}
+	.holder-inputs .hold-inputs {
+	    margin: 0 0 15px;
+	    .box-input {
+		    width: 100%;
+		    padding: 0;
+		}
+	}
+	.jcf-list .jcf-option {
+	    padding: 3.5px 10px;
+	}
+}
+
+@media only screen and (max-width : 400px){
+	.box-project {
+	    width: calc(100% - 30px);
+	}
+}
+

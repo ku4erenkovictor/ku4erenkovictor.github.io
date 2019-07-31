@@ -1,0 +1,107 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title Project
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+		link(rel="stylesheet" href="css/main.min.css")
+	body
+
+		// main  start
+
+		main(class="main")
+			div(class="container")
+				div(class="holder-title")
+					h1(class="title-h1") Project
+				form(action="#")
+					div(class="table-projects")
+						div(class="table-projects__item")
+							div(class="table-projects__col")
+								span(class="input-label input-label__no-hover") 
+								span(class="table-projects__title") #
+							div(class="table-projects__col")
+								span(class="table-projects__title") Client
+							div(class="table-projects__col")
+								span(class="table-projects__title") Status
+						div(class="table-projects__item")
+							div(class="table-projects__col")
+								input(id="filter2" class="input-checkbox" type="checkbox")
+								label(for="filter2" class="input-label")
+								span(class="table-projects__text") PROJECT #1723
+							div(class="table-projects__col") Stella
+							div(class="table-projects__col")
+								select(class="custom" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}')
+									option(value="v1" class="hideme") Sent
+									option(value="v2") Sent 2
+									option(value="v3") Sent 3
+						div(class="table-projects__item table-projects__item-draft")
+							div(class="table-projects__col")
+								input(id="filter3" class="input-checkbox" type="checkbox")
+								label(for="filter3" class="input-label")
+								span(class="table-projects__text") PROJECT #1720
+							div(class="table-projects__col") IT corp international
+							div(class="table-projects__col")
+								select(class="custom" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}')
+									option(value="v1" class="hideme") Draft
+									option(value="v2") Draft 2
+									option(value="v3") Draft 3
+					div(class="holder-projects")
+						a(class="box-project")
+							span(class="box-project__icon")
+								img(src="../images/project-1.png", alt="image")
+							span(class="box-project__title") Project #1
+							p(class="box-project__text") Lerem ipsum dolor sit amet,  consectetur
+						a(class="box-project")
+							span(class="box-project__icon")
+								img(src="../images/project-2.png", alt="image")
+							span(class="box-project__title") Project #2
+							p(class="box-project__text") Lerem ipsum dolor sit amet,  consectetur
+						a(class="box-project")
+							span(class="box-project__icon")
+								img(src="../images/project-3.png", alt="image")
+							span(class="box-project__title") Project #3
+							p(class="box-project__text") Lerem ipsum dolor sit amet,  consectetur
+						a(class="box-project")
+							span(class="box-project__icon")
+								img(src="../images/project-4.png", alt="image")
+							span(class="box-project__title") Project #4
+							p(class="box-project__text") Lerem ipsum dolor sit amet,  consectetur
+					div(class="holder-inputs")
+						h2(class="title-h2") Add project
+						div(class="hold-inputs")
+							div(class="box-input")
+								span(class="box-input__text") Name
+									span(class="box-input__sub") *
+								input(class="input-text" type="text" placeholder="Project #1723")
+							div(class="box-input")
+								span(class="box-input__text") Client
+									span(class="box-input__sub") *
+								input(class="input-text" type="text" placeholder="Project #1723")
+							div(class="box-input")
+								span(class="box-input__text") E-mail
+									span(class="box-input__sub") *
+								input(class="input-text" type="email" placeholder="project1723@gmail.com")
+							div(class="box-input")
+								span(class="box-input__text") Admin
+									span(class="box-input__sub") *
+								select(class="custom" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}')
+									option(value="v1" class="hideme") Admin
+									option(value="v2") Admin 2
+									option(value="v3") Admin 3
+									option(value="v4") Admin 4
+									option(value="v5") Admin 5
+						div(class="hold-buttons")
+							button(class="btn btn-cancel" type="reset" value="Reset") Cancel
+							button(class="btn btn-add" type="submit" value="Submit") Add
+  						
+		// main  end
+
+		// footer  start
+
+		footer(class="footer")
+			div(class="container")
+
+		// footer  end
+						
+		script(src="js/scripts.min.js")
