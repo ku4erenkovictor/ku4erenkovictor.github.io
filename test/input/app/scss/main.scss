@@ -1,0 +1,155 @@
+*{
+	box-sizing: border-box;
+}
+
+html,body {
+	height: 100%;
+	margin: 0;
+}
+body{
+	background: #fff;
+	min-width: 320px;
+	margin: 0;
+	color: #000;
+	font-size: 14px;
+	line-height: 18px;
+	-webkit-text-size-adjust: 100%;
+}
+
+form, fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+
+img {
+	border-style: none;
+	vertical-align: top;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	color: #000;
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	&:focus,
+	&:hover {
+		outline: none;
+		outline: 0;
+	}
+}
+
+a[href^="tel"],
+a[href^="tel"]:hover {
+	cursor: default;
+	text-decoration: none;
+	white-space: nowrap;
+	
+	border: none;
+}
+button{
+	border: 0;
+	outline: 0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {display:block;}
+figure{margin:0;}
+input::-moz-focus-inner,
+textarea::-moz-focus-inner,
+button::-moz-focus-inner{
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+input[type="text"],
+input[type="email"], 
+input[type="password"],
+textarea{
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #000;
+	outline: 0;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	&:focus{
+		outline: 0;
+	}
+}
+
+.container{
+	max-width: 1150px;
+	margin: 0 auto;
+	padding: 0 20px;
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+.main{
+	padding: 50px 0;
+}
+
+.box-input{
+	position: relative;
+	display: block;
+	width: 250px;
+	margin: 0 auto;
+	&:focus-within .box-input__placeholder{
+		top: 0;
+	}
+	&__placeholder{
+		position: absolute;
+		background: #999;
+		padding: 3px;
+		border-radius: 2px;
+		top: 50%;
+		left: 10px;
+		transform: translateY(-50%);
+		transition: top 0.2s ease-in-out;
+	}
+	&__input{
+		height: 38px;
+		background: #999;
+		border: 2px solid #000;
+		&:focus ~ .box-input__placeholder,
+		&:valid ~ .box-input__placeholder{
+			top: -2px;
+		}
+	}
+}
+
+/* placeholder input*/
+input:-moz-placeholder {
+	color: #000;
+	opacity: 1;
+}
+input::-moz-placeholder {
+	color: #000;
+	opacity: 1;
+}
+input::-webkit-input-placeholder {color: #000;}
+input:-ms-input-placeholder {color: #000;}
+
+/* input:focus placeholder */
+input:focus:-moz-placeholder {
+	color: #000;
+	opacity: 1;
+}
+input:focus::-moz-placeholder {
+	color: #000;
+	opacity: 1;
+}
+input:focus::-webkit-input-placeholder {color: #000;}
+input:focus:-ms-input-placeholder {color: #000;}
