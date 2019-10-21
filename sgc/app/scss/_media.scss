@@ -1,0 +1,204 @@
+@import "vars";
+
+@media only screen and (max-width : 1850px){
+	.content {
+	    padding: 100px 25px 0 25px;
+	}
+	.box-graph {
+	    margin: 0 30px 0 0;
+	}
+}
+
+@media only screen and (max-width : 1700px){
+	.aside{
+		width: 300px;
+	}
+	.content {
+	    width: calc(100% - 300px);
+	}
+	.container{
+		margin: 0 0 50px;
+		.column,
+		.column:last-child{
+			width: 100%;
+			margin: 0 0 50px;
+		}
+	}
+	.box-price{
+		padding: 25px;
+		margin: 0 30px 30px 0;
+		.hold-price{
+			padding: 15px 0 0;
+			.price {
+			    font-size: 24px;
+			    line-height: 28px;
+			    font-weight: 700;
+			}
+		}
+	}
+	.hold-key svg{
+		height: 100px;
+		width: 100px;
+	}
+}
+
+@media only screen and (max-width : 1279px){
+	.holder-inputs .box-input:nth-child(3) {
+	    max-width: 320px;
+	}
+}
+
+@media only screen and (max-width : 1024px){
+	#wrapper .main-holder {
+	    flex-direction: column;
+	}
+	.aside{
+		min-height: auto;
+		width: 100%;
+	}
+	.box-logo{
+		margin: 0 0 15px;
+		.logo svg {
+		    height: 70px;
+		    width: 62px;
+		}
+	}
+	.list-nav {
+	    font-size: 18px;
+	    line-height: 22px;
+	    &__link {
+		    padding: 15px 25px;
+		}
+	}
+	.aside-bottom{
+		padding: 0 25px 20px;
+    	border-top: none;
+	}
+	.box-balance {
+	    font-size: 20px;
+	    line-height: 24px;
+	    margin: 0 0 15px;
+	}
+	.content{
+		width: 100%;
+	}
+	h1, h2 {
+	    font-size: 36px;
+	    line-height: 40px;
+	    margin: 0 0 20px;
+	}
+	.box-tokens .hold-tokens .tokens-item,
+	.box-tokens .hold-tokens .tokens-equally{
+	    font-size: 28px;
+	    line-height: 32px;
+	}
+	.hold-key svg {
+	    height: 70px;
+	    width: 70px;
+	}
+
+}
+
+@media only screen and (max-width : 768px){
+	.box-graph {
+	    padding: 22px 0 0 50px;
+	    .list-price__item {
+		    font-size: 12px;
+		}
+		.list-graph__item {
+		    margin: 0 4px;
+		    &.active:before {
+			    border: 8px solid #fff;
+			}
+		}
+	}
+	h1, h2 {
+	    font-size: 30px;
+	    line-height: 36px;
+	}
+	.box-select{
+		font-size: 16px;
+	}
+	.box-tokens .hold-tokens .tokens-equally,
+	.box-tokens .hold-tokens .tokens-item {
+	    font-size: 22px;
+	    line-height: 24px;
+	}
+	.box-tokens .hold-tokens .tokens-equally{
+		padding: 0 10px 10px;
+	}
+	.box-tokens .hold-tokens .tokens-item{
+		min-width: 170px;
+		padding: 0 0 10px;
+	}
+	.container:last-child{
+		margin: 0;
+	}
+	.holder-inputs .box-input .input{
+		height: 60px;
+	}
+	.holder-inputs .box-input .input,
+	.holder-inputs .box-input .input-label{
+		    font:400 20px/22px Montserrat,sans-serif;
+	}
+	.holder-inputs .box-input,
+	.holder-inputs .box-input:nth-child(3){
+	    width: calc(50% - 16px);
+	}
+	.form .hold-btn .btn {
+	    padding: 18px 50px;
+	}
+}
+
+@media only screen and (max-width : 450px){
+	.box-price{
+		min-width: 100%;
+		margin: 0 0 30px;
+	}
+	.box-graph .list-graph__item{
+		width: 6px;
+		margin: 0 2px;
+	}
+	.box-tokens .hold-tokens .tokens-item {
+	    min-width: 140px;
+	    font-size: 16px;
+    	line-height: 20px;
+    	padding: 0 0 5px;
+    	margin: 0 0 10px;
+	}
+	.box-tokens .hold-tokens .box-select{
+		font-size: 14px;
+	    padding: 9px 35px 9px 16px;
+	    &:after {
+		    border: 5px solid transparent;
+		    border-top: 5px solid #fff;
+		}
+	}
+	.box-tokens .hold-tokens .box-sgc{
+		font-size: 14px;
+	}
+	.box-tokens .hold-tokens .tokens-equally {
+	    font-size: 16px;
+	    line-height: 20px;
+	    margin: 0 0 10px;
+	}
+	.hold-key{
+		font-size: 12px;
+    	line-height: 16px;
+    	svg {
+		    height: 40px;
+		    width: 40px;
+		    margin: 0 15px 0 0;
+		}
+	}
+	.holder-inputs{
+		margin: 0;
+		.box-input,
+		.box-input:nth-child(3){
+			max-width: 100%;
+			width: 100%;
+			margin: 0 0 20px;
+		}
+	}
+}
+
