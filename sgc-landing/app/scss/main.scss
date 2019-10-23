@@ -104,6 +104,8 @@ h2{
 }
 
 .btn{
+	overflow: hidden;
+	position: relative;
 	display: inline-block;
 	vertical-align: top;
 	background: linear-gradient(61.19deg, #3000C0 0%, #9060F8 56.57%);
@@ -114,9 +116,25 @@ h2{
 	padding: 33px 60px;
 	border-radius: 2px;
 	transition: transform 0.2s ease-in-out;
-	&:hover{
-		transform: scale(1.05);
+	&:after {
+	  	content: '';
+	  	position: absolute;
+	  	top: -50%;
+	  	right: -50%;
+	  	bottom: -50%;
+	  	left: -50%;
+	    background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+	  	transform: rotateZ(60deg) translate(-5em, 14em);
 	}
+	&:hover:after{
+		animation: sheen 1s forwards;
+	}
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(5em, -14em);
+  }
 }
 
 #wrapper {
@@ -512,19 +530,29 @@ h2{
 .block-roadmap{
 	position: relative;
 	margin: 0 0 160px;
-	.gold-left{
+	.gold{
 		position: absolute;
-		max-width: 360px;
-		width: 30%;
-		top: 50px;
-    	left: 95px;
-	}
-	.gold-right{
-		position: absolute;
-		max-width: 360px;
-		width: 30%;
-		top: 355px;
-    	right: 175px;
+		&-left{
+			position: absolute;
+			width: 19%;
+			top: 50px;
+	    	left: 95px;
+		}
+		&-right{
+			position: absolute;
+			width: 17.5%;
+			top: 355px;
+			right: 190px;
+	    	box-shadow: 0px 32px 48px rgba(0, 0, 0, 0.25);
+	    	.img-blur{
+	    		position: absolute;
+			    max-width: 280px;
+			    top: 20px;
+			    right: 30px;
+			    -webkit-filter: blur(60px);
+			    filter: blur(60px);
+	    	}
+		}
 	}
 	h2{
 		margin: 0 0 45px;
@@ -647,9 +675,6 @@ h2{
 		}
 	}
 }
-
-
-
 
 @-webkit-keyframes fadeInUp {
   from {
