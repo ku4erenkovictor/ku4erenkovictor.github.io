@@ -81,7 +81,7 @@ img{
 	height: auto;
 }
 
-p{ margin: 0 0 30px;}
+p{ margin: 0 0 25px;}
 
 h1{
 	font: 120px/132px $playfair-display;
@@ -113,9 +113,9 @@ h2{
 	text-transform: uppercase;
 	padding: 33px 60px;
 	border-radius: 2px;
-	transition: background 0.2s ease-in-out;
+	transition: transform 0.2s ease-in-out;
 	&:hover{
-
+		transform: scale(1.05);
 	}
 }
 
@@ -135,13 +135,18 @@ h2{
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 1;
 	.logo{
 		display: block;
 		height: 174px;
 		width: 166px;
+		transition: transform 0.2s ease-in-out;
 		svg{
 			height: 100%;
 			width: 100%;
+		}
+		&:hover{
+			transform: scale(1.05);
 		}
 	}
 	.box-btn{
@@ -297,9 +302,36 @@ h2{
 }
 
 .block-main{
+	overflow: hidden;
 	text-align: center;
+	position: relative;
 	padding: 320px 0 0;
 	margin: 0 0 40px;
+	&:before,
+	&:after{
+		content: "";
+		position: absolute;
+		height: 80%;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: -2;
+	}
+	&:before{
+		background-image: url("../images/main-before.png");
+		background-size: cover;
+	}
+	&:after{
+		background-image: url("../images/main-after.png");
+		background-size: cover;
+	}
+	.line{
+		position: absolute;
+		top: 65px;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
 	h1{
 		max-width: 920px;
 		width: 100%;
@@ -326,7 +358,7 @@ h2{
 	}
 	.about-img{
 		position: relative;
-		margin: -35px 0 0;
+		margin: -30px 0 0;
 		.icon-video{
 			position: absolute;
 			height: 78px;
@@ -334,10 +366,15 @@ h2{
 			top: 105px;
 			left: 50%;
 			transform: translateX(-50%);
+			cursor: pointer;
 			svg{
 				fill: $white-color;
 				height: 100%;
 				width: 100%;
+				transition: fill 0.2s ease-in-out;
+			}
+			&:hover svg{
+				fill: $gold-dark-color;
 			}
 		}
 	}
@@ -412,7 +449,7 @@ h2{
 }
 
 .block-team{
-	margin: 0 0 220px;
+	margin: 0 0 90px;
 	h2{
 		margin: 0 0 50px;
 	}
@@ -472,14 +509,241 @@ h2{
 	}
 }
 
+.block-roadmap{
+	position: relative;
+	margin: 0 0 160px;
+	.gold-left{
+		position: absolute;
+		max-width: 360px;
+		width: 30%;
+		top: 50px;
+    	left: 95px;
+	}
+	.gold-right{
+		position: absolute;
+		max-width: 360px;
+		width: 30%;
+		top: 355px;
+    	right: 175px;
+	}
+	h2{
+		margin: 0 0 45px;
+	}
+	.list-roadmap{
+		position: relative;
+		max-width: 830px;
+		width: 100%;
+		font: 18px/24px $playfair-display;
+		margin: 0 auto;
+		&:before{
+			content: "";
+			position: absolute;
+			background: linear-gradient(180deg, #E8B840 0%, #FCDC84 100%);
+			width: 4px;
+			top: 0;
+			bottom: 25px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		&__item{
+			overflow: hidden;
+			position: relative;
+			&:after{
+				content: "";
+				position: absolute;
+				background: $white-color;
+				height: 48px;
+				width: 48px;
+				border-radius: 50%;
+				top: 18px;
+				left: 50%;
+				transform: translateX(-50%);
+				box-shadow: 0px 12px 32px #E8B840;
+			}
+			.item-box{
+				position: relative;
+				text-align: right;
+				float: left;
+				width: 50%;
+				padding: 30px 80px 5px 0;
+				&:before,
+				&:after{
+					content: "";
+					position: absolute;
+					background: $white-color;
+					border-radius: 50%;
+				}
+				&:before{
+					height: 4px;
+					width: 4px;
+					top: 40px;
+					right: 50px;
+				}
+				&:after{
+					height: 8px;
+					width: 8px;
+					top: 38px;
+					right: 32px;
+				}
+
+			}
+			&:nth-child(even){
+				&:after{
+
+				}
+				.item-box{
+					text-align: left;
+					float: right;
+					padding: 30px 0 5px 80px;
+					&:before{
+						right: auto;
+						left: 50px;
+					}
+					&:after{
+						right: auto;
+						left: 32px;
+					}
+				}
+			}
+			.item-date{
+				display: block;
+				font:700 24px/26px $main-font;
+				text-transform: uppercase;
+				margin: 0 0 15px;
+			}
+			&:last-child{
+				margin: -20px 0 0;
+			}
+		}
+	}
+}
+
+.block-partners{
+	position: relative;
+	margin: 0 0 685px;
+	.line{
+		position: absolute;
+		top: -35px;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
+	h2{
+		margin: 0 0 68px;
+	}
+	.holder-partners{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		.box-partners{
+			margin: 0 65px 30px;
+			transition: transform 0.2s ease-in-out;
+			img{
+				max-width: 100%;
+			}
+			&:hover{
+				transform: scale(1.05);
+			}
+		}
+	}
+}
 
 
 
 
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
 
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
 
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
 
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 @-webkit-keyframes fadeInLeft {
   from {
@@ -645,21 +909,6 @@ h2{
 .animated.delay-3s {
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
-}
-
-.animated.delay-4s {
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
-}
-
-.animated.delay-5s {
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
-}
-
-.animated.delay-6s {
-  -webkit-animation-delay: 6s;
-  animation-delay: 6s;
 }
 
 @media (prefers-reduced-motion) {

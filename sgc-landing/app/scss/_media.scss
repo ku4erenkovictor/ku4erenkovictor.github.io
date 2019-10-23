@@ -4,6 +4,9 @@
 	.header {
 		padding: 30px 30px 0;
 	}
+	.block-partners {
+		margin: 0 0 300px;
+	}
 }
 
 @media (min-width: 1025px) {
@@ -139,7 +142,7 @@
         transform: none;
   	}
   	.block-team{
-  		margin: 0 0 100px;
+  		margin: 0 0 70px;
   		.holder-team {
 		    justify-content: center;
 		}
@@ -147,6 +150,64 @@
   			width: 50%;
   		}
   	}
+  	.block-roadmap,{
+	    margin: 0 0 80px;
+	}
+	.block-partners {
+		margin: 0 0 120px;
+		.holder-partners .box-partners {
+	    	margin: 0 40px 30px;
+	    }
+	}
+}
+
+@media only screen and (max-width : 900px){
+	.block-roadmap{
+		.list-roadmap{
+			&:before{
+				left: 8px;
+				bottom: 0;
+				transform: translateX(0);
+			}
+			&__item{
+				&:after{
+					height: 20px;
+					width: 20px;
+					top: 32px;
+					left: 0;
+    				transform: translateX(0);
+    				box-shadow: none;
+				}
+				&:last-child{
+					margin: 0;
+				}
+				.item-box{
+					text-align: left;
+					width: 100%;
+				}
+				p{
+					margin: 0 0 10px;
+				}
+			}
+			&__item,
+			&__item:nth-child(even){
+				.item-box{
+					float: none;
+					padding: 30px 0 0 50px;
+					&:before{
+						left: 38px;
+					}
+					&:after{
+						left: 25px;
+					}
+					br{
+						display: none;
+					}
+				}
+			}
+			
+		}
+	}
 }
 
 @media only screen and (max-width : 768px){
@@ -196,6 +257,12 @@
 		    padding: 30px 0 0 0;
 		}
 	}
+	.block-partners{
+		margin: 0 0 80px;
+		.holder-partners .box-partners {
+		    margin: 0 25px 30px;
+		}
+	}
 }
 
 @media only screen and (max-width : 590px){
@@ -223,7 +290,6 @@
 	}
 	.block-team{
   		margin: 0 0 50px;
-
   		.box-team{
   			width: 100%;
   			&__img {
@@ -233,6 +299,24 @@
 		   		font-size: 20px;
 			}
   		}
+  	}
+  	.block-roadmap{
+  		margin: 0 0 60px;
+  		.list-roadmap{
+	  		font: 16px/20px $playfair-display;
+	  		&__item .item-date{
+		  		font:700 20px/24px $main-font;
+		  	}
+	  	}
+  	}
+  	.block-partners{
+  		h2 {
+		    margin: 0 0 45px;
+		}
+		.holder-partners .box-partners {
+			width: 40%;
+		    margin: 0 10px 30px;
+		}
   	}
 }
 
@@ -246,11 +330,8 @@
 	.header .box-btn .link{
 		font-size: 13px;
 	}
-	.block-team{
-  		margin: 0 0 50px;
-  		.box-team{
-  			width: 100%;
-  		}
+	.block-team .box-team{
+  		width: 100%;
   	}
 }
 
