@@ -12,8 +12,8 @@
 		width: 50%;
 		padding: 5%;
 		cursor: pointer;
-		&:not(:first-child){
-			border-left: 2px solid #303030;
+		&:not(:last-child){
+			border-right: 2px solid #303030;
 		}
 		&-search{
 			display: none;
