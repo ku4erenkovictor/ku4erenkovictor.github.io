@@ -23,12 +23,12 @@
 		&__title{
 			text-align: center;
 			position: relative;
-			font-size: 1.15rem;
+			font: 1.15rem/1.2 "RalewayLight";
 			&-arrow{
 				display: none;
 				position: absolute;
-				height: 20%;
-				width: 5%;
+				height: 7.5vw;
+    			width: 6vw;
     			top: 50%;
 				left: 6%;
 				transform: translateY(-50%);
@@ -50,9 +50,8 @@
 				display: none;
 			}
 			&__title{
-				font-size: calc(1.4em + 1vw);
-    			line-height: calc(1em + 1vw);
-				padding: 10% 22%;
+				font-size: 1.65rem;
+				padding: 9% 22%;
 				margin: 0;
 				&-arrow{
 					display: block;

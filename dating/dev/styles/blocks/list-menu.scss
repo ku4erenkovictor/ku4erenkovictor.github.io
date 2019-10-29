@@ -15,6 +15,12 @@
 			border-left: 2px solid #303030;
 		}
 		cursor: pointer;
+		&-search{
+			svg,
+			rect{
+				fill: #484848;
+			}
+		}
 	}
 	&__icon{
 		position: relative;
@@ -38,6 +44,29 @@
 			border-radius: 50%;
 			top: -20%;
     		right: -45%;
+		}
+	}
+}
+
+@media (max-width: 1023px) {
+	.list-menu{
+		&__item{
+			width: 40%;
+			&:first-child,
+			&:last-child{
+				width: 30%;
+			}
+		}
+		&__icon{
+			height: 10vw;
+	    	width: 10vw;
+			.icon-chat__number{
+				height: 5vw;
+				width: 5vw;
+				font: 0.7rem/1 "RalewayBold";
+				top: -25%;
+    			right: -25%;
+			}
 		}
 	}
 }
