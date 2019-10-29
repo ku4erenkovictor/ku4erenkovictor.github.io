@@ -15,12 +15,6 @@
 			border-left: 2px solid #303030;
 		}
 		cursor: pointer;
-		&-search{
-			svg,
-			rect{
-				fill: #484848;
-			}
-		}
 	}
 	&__icon{
 		position: relative;
@@ -31,6 +25,12 @@
 			fill: #fff;
 			height: 100%;
 			width: 100%;
+		}
+		&-search{
+			svg,
+			rect{
+				fill: #484848;
+			}
 		}
 		.icon-chat__number{
 			position: absolute;

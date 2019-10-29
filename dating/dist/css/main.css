@@ -464,11 +464,6 @@ h1 {
   border-left: 2px solid #303030;
 }
 
-.list-menu__item-search svg,
-.list-menu__item-search rect {
-  fill: #484848;
-}
-
 .list-menu__icon {
   position: relative;
   height: 1.7vw;
@@ -480,6 +475,11 @@ h1 {
   fill: #fff;
   height: 100%;
   width: 100%;
+}
+
+.list-menu__icon-search svg,
+.list-menu__icon-search rect {
+  fill: #484848;
 }
 
 .list-menu__icon .icon-chat__number {
