@@ -1,0 +1,144 @@
+.block-gallery{
+	.arrow{
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 4.2vw;
+    	width: 4.2vw;
+		background: #fff;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 1;
+		svg{
+			fill: #484848;
+			height: 0.75vw;
+    		width: 2.3vw;
+		}
+		&-left{
+			left: 2.7%;
+			border-radius: 0 10px 10px 0;
+		}
+		&-right{
+			right: 2.7%;
+			border-radius: 10px 0 0 10px;
+		}
+	}
+	.holder-gallery{
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -3% 10.5%;
+	}
+	.box-gallery{
+		position: relative;
+		height: 25vw;
+		width: 33.3%;
+		padding: 0 1%;
+		&:not(.box-gallery__active){
+			filter: blur(10px);
+		}
+		&__head{
+			display: flex;
+			position: absolute;
+			justify-content: space-between;
+			padding: 0 3% 0 10%;
+			top: 3%;
+			left: 3%;
+			right: 3%;
+		}
+		&__online{
+			position: absolute;
+			box-shadow: 0 0 0 0.25vw rgba(52%, 99%, 28%, 0.3);
+			background: $color-green;
+			height: 0.85vw;
+			width: 0.85vw;
+			border-radius: 50%;
+			top: 50%;
+			left: 5%;
+			transform: translateY(-50%);
+		}
+		&__info{
+			display: flex;
+			align-items: center;
+			font: 0.56rem/1.2 "RalewayBold";
+			background: $color-black;
+			color: $color-white;
+			padding: 1% 5%;
+			border-radius: 100px;
+			.num{
+				font: 0.56rem/1.2 "RalewayRegular";
+				color: #A0A0A0;
+				padding: 0 0 0 4%;
+			}
+		}
+		&__close{
+			display: flex;
+			height: 2.1vw;
+			width: 2.1vw;
+			svg,
+			rect{
+				fill: $color-white;
+				height: 100%;
+				width: 100%;
+			}
+		}
+		&__img{
+
+		}
+		&__like{
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #FC486C;
+			height: 3.8vw;
+			width: 3.8vw;
+			padding: 4%;
+			border-radius: 50%;
+			box-shadow: 0 0 0 0.6vw rgba(99%, 28%, 42%, 0.3);
+			left: 50%;
+			bottom: -7%;
+			transform: translateX(-50%);
+			svg{
+				fill: $color-white;
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+	.gallery-scroll{
+		position: relative;
+		background: #ECECEC;
+		height: 1.25vw;
+		width: 72.2%;
+		border-radius: 100px;
+		margin: 0 auto;
+		&__icon{
+			position: absolute;
+			background: $color-white;
+			height: 0.85vw;
+    		width: 3.3vw;
+    		border-radius: 100px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			svg{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			svg,
+			rect{
+				fill: #C4C4C4;
+			}
+		}
+	}
+}
+
+@media (max-width: 1023px) {
+	.block-gallery{
+		display: none;
+	}
+}
