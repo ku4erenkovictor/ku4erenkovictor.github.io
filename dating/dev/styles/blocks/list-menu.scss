@@ -11,10 +11,19 @@
 		justify-content: center;
 		width: 50%;
 		padding: 5%;
+		cursor: pointer;
 		&:not(:first-child){
 			border-left: 2px solid #303030;
 		}
-		cursor: pointer;
+		&-search{
+			display: none;
+			.list-menu__icon{
+				svg,
+				rect{
+					fill: #484848;
+				}
+			}
+		}
 	}
 	&__icon{
 		position: relative;
@@ -25,12 +34,6 @@
 			fill: #fff;
 			height: 100%;
 			width: 100%;
-		}
-		&-search{
-			svg,
-			rect{
-				fill: #484848;
-			}
 		}
 		.icon-chat__number{
 			position: absolute;
@@ -55,6 +58,9 @@
 			&:first-child,
 			&:last-child{
 				width: 30%;
+			}
+			&-search{
+				display: flex;
 			}
 		}
 		&__icon{

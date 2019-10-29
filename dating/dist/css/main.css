@@ -464,6 +464,15 @@ h1 {
   border-left: 2px solid #303030;
 }
 
+.list-menu__item-search {
+  display: none;
+}
+
+.list-menu__item-search .list-menu__icon svg,
+.list-menu__item-search .list-menu__icon rect {
+  fill: #484848;
+}
+
 .list-menu__icon {
   position: relative;
   height: 1.7vw;
@@ -475,11 +484,6 @@ h1 {
   fill: #fff;
   height: 100%;
   width: 100%;
-}
-
-.list-menu__icon-search svg,
-.list-menu__icon-search rect {
-  fill: #484848;
 }
 
 .list-menu__icon .icon-chat__number {
@@ -502,6 +506,9 @@ h1 {
   }
   .list-menu__item:first-child, .list-menu__item:last-child {
     width: 30%;
+  }
+  .list-menu__item-search {
+    display: flex;
   }
   .list-menu__icon {
     height: 10vw;
