@@ -1,0 +1,46 @@
+html,
+body {
+	max-height: 100%;
+	height: 100%;
+}
+
+html{
+	font-size: calc(12px + 1vw);
+	line-height: 1.2
+}
+
+body {
+	min-width: 320px;
+	background: $color-white;
+	font-family: "RobotoLight";
+	-webkit-overflow-scrolling: touch;
+}
+
+button,
+[type=reset],
+[type=submit],
+[type=image],
+a {
+	-webkit-transition: background-color .2s, color .2s;
+	transition: background-color .2s, color .2s;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+i,
+em {
+	font-style: italic;
+}
+
+p {
+	margin: 0;
+}
