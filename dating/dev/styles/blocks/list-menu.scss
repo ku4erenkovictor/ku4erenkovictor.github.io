@@ -76,3 +76,22 @@
 		}
 	}
 }
+
+@media (max-height: 479px) {
+	.list-menu{
+		&__item{
+			padding: 2%;
+		}
+		&__icon{
+			height: 6vw;
+    		width: 6vw;
+			.icon-chat__number{
+				height: 5vw;
+				width: 5vw;
+				font: 0.7rem/1 "RalewayBold";
+				top: -25%;
+    			right: -25%;
+			}
+		}
+	}
+}

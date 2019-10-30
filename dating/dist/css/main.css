@@ -524,6 +524,23 @@ h1 {
   }
 }
 
+@media (max-height: 479px) {
+  .list-menu__item {
+    padding: 2%;
+  }
+  .list-menu__icon {
+    height: 6vw;
+    width: 6vw;
+  }
+  .list-menu__icon .icon-chat__number {
+    height: 5vw;
+    width: 5vw;
+    font: 0.7rem/1 "RalewayBold";
+    top: -25%;
+    right: -25%;
+  }
+}
+
 .messages {
   overflow: hidden;
   height: 100%;
@@ -707,6 +724,37 @@ h1 {
   }
 }
 
+@media (max-height: 479px) {
+  .messages {
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .messages::-webkit-scrollbar {
+    display: none;
+  }
+  .messages-box {
+    height: 26vw;
+    padding: 6% 4% 4% 25%;
+  }
+  .messages-box__number {
+    height: 7vw;
+    width: 7vw;
+    font: 0.85rem/1 "RalewayBold";
+    right: 7.5vw;
+    bottom: 6.5vw;
+  }
+  .messages-box__img {
+    width: 15vw;
+    margin: 0 0 0 -27%;
+  }
+  .messages-box__hold {
+    height: 16.5vw;
+  }
+}
+
 .aside {
   overflow: hidden;
   position: fixed;
@@ -773,6 +821,12 @@ h1 {
   }
   .aside-head__title-arrow {
     display: block;
+  }
+}
+
+@media (max-height: 479px) {
+  .aside-head__title {
+    padding: 5% 22%;
   }
 }
 

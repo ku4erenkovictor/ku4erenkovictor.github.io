@@ -60,3 +60,13 @@
 		}
 	}
 }
+
+@media (max-height: 479px) {
+	.aside{
+		&-head{
+			&__title{
+				padding: 5% 22%;
+			}
+		}
+	}
+}
