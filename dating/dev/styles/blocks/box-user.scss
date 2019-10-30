@@ -1,0 +1,36 @@
+.box-user{
+	overflow: hidden;
+	display: flex;
+	flex-basis: 250px;
+	justify-content: flex-end;
+	padding: 1.2% 0 0;
+	margin: 0 0 0 auto;
+	&__hold{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		padding: 7.5% 3% 0 0;
+	}
+	&__name{
+		font: 0.56rem/1.2 "RobotoRegular";
+		margin: 0 0 8%;
+	}
+	&__btn{
+		display: flex;
+		height: 0.85vw;
+		width: 0.85vw;
+		svg,
+		rect{
+			fill: $color-pink;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	&__img{
+		width: 4.2vw;
+		border-radius: 50%;
+		img{
+			border-radius: 50%;
+		}
+	}
+}
