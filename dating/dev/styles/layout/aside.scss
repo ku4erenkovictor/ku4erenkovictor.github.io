@@ -5,6 +5,7 @@
 	color: $color-white;
 	height: 100vh;
 	width: 25%;
+	padding: 0 0 16.5%;
 	top: 0;
 	left: 0;
 	z-index: 99;
@@ -43,7 +44,10 @@
 
 @media (max-width: 1023px) {
 	.aside{
+		display: flex;
+		flex-direction: column;
 		width: 100%;
+		padding: 0 0 20%;
 		&-head{
 			padding: 0;
 			&__logo{
@@ -63,6 +67,7 @@
 
 @media (max-height: 479px) {
 	.aside{
+		padding: 0 0 10%;
 		&-head{
 			&__title{
 				padding: 5% 22%;

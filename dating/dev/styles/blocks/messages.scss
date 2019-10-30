@@ -1,6 +1,12 @@
 .messages{
 	overflow: hidden;
+	overflow-y: auto;
 	height: 100%;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	&::-webkit-scrollbar { 
+		display: none;
+	}
 	&-box{
 		overflow: hidden;
 		position: relative;
@@ -175,14 +181,6 @@
 
 @media (max-height: 479px) {
 	.messages{
-		overflow: hidden;
-		overflow-y: auto;
-		height: 100%;
-		-ms-overflow-style: none;
-		scrollbar-width: none;
-		&::-webkit-scrollbar { 
-			display: none;
-		}
 		&-box{
 			height: 26vw;
 			padding: 6% 4% 4% 25%;
