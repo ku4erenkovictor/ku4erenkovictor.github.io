@@ -1,0 +1,55 @@
+.categories{
+	&-title{
+		display: block;
+		font-size: 16px;
+		line-height: 1.2;
+		font-weight: 600;
+		color: #333;
+	    text-transform: uppercase;
+	    padding: 8px 0 6px;
+		border-bottom: #ddd 1px dotted;
+		cursor: pointer;
+	}
+	&-list{
+		&__item{
+			position: relative;
+			padding: 0 0 0 12px;
+			border-bottom: #ddd 1px dotted;
+			&-active{
+				&:after{
+					content: "";
+					position: absolute;
+				    background: url("../img/arrow.png") no-repeat;
+				    background-size: cover;
+				    width: 24px;
+				    height: 24px;
+				    top: 2px;
+				    left: -9px;
+				    transform: rotate(-90deg);
+				}
+				> .categories-list__link{
+					color: $red-color;
+				}
+			}
+		}
+		&__link{
+			display: block;
+			color: #111;
+			text-transform: uppercase;
+			padding: 8px 0;
+			&-active,
+			&:hover{
+				color: $red-color;
+			}
+		}
+	}
+	&-sub{
+		.categories-list__item{
+			padding: 0 0 0 15px;
+			border-bottom: none;
+		}
+		.categories-list__link{
+			text-transform: capitalize;
+		}
+	}
+}

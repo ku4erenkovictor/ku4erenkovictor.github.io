@@ -1,0 +1,46 @@
+.header{
+    position: relative;
+	flex: 0 0 auto;
+    background: $white-color;
+	.container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&-top{
+		padding: 10px 0 14px;
+		border-bottom: 1px solid #f1f1f1;
+	}
+	&-box{
+		display: flex;
+		align-items: center;
+	}
+	&-link{
+    	position: relative;
+    	font-size: 13px;
+    	line-height: 1.2;
+    	text-transform: uppercase;
+    	color: #111;
+    	padding: 12px 0 6px 35px;
+    	transition: color 0.2s ease;
+    	&__icon{
+    		position: absolute;
+    		max-width: 30px;
+    		width: 100%;
+    		top: 50%;
+    		left: 0;
+    		transform: translateY(-50%);
+    	}
+    	&:hover{
+    		color: $red-color;
+    		text-decoration: underline;
+    	}
+        @media (max-width: 767px){
+            font-size: 11px;
+            padding: 10px 0 5px 25px;
+            &__icon{
+                max-width: 21px;
+            }
+        }
+	}
+}
