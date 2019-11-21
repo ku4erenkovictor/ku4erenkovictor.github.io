@@ -1,0 +1,93 @@
+.popap-form {
+  max-width: 428px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 55px 29px;
+  &__close {
+    position: absolute;
+    top: 11px;
+    right: 9px;
+    display: block;
+    font-size: 15px;
+    color: #d4d4d4;
+    transition: color ease .25s;
+    &:hover {
+      cursor: pointer;
+      color: darken(#d4d4d4, 60%);
+      transition: color ease .25s;
+    }
+  }
+  &__title {
+    font: 15px/1.5 $font2;
+    padding: 0 5px;
+    letter-spacing: 1px;
+    margin-bottom: 26px;
+    color: #0e0616;
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 -7.5px;
+    .btn {
+    padding: 7px 38px;
+}
+  }
+  &__field {
+    padding: 0 7.5px;
+    &_input {
+      width: 50%;
+      flex: 1 0 auto;
+    }
+    &_btn {
+      width: 100%;
+      padding-top: 28px;
+      text-align: center;
+    }
+
+    &.error {
+      .popap-form__input {
+        border: 1px solid #a61717;
+      }
+    }
+
+  }
+  &__input {
+    height: 34px;
+    font: 14px/16px $font3;
+    padding: 8px 10px;
+    width: 100%;
+    color: #000;
+    border: 1px solid #999;
+    &::-webkit-input-placeholder {
+      color:#d9d9d9;
+    }
+
+    &::-moz-placeholder {
+      color:#d9d9d9;
+    }
+
+    &:-moz-placeholder {
+      color:#d9d9d9;
+    }
+
+    &:-ms-input-placeholder {
+      color:#d9d9d9;
+    }
+  }
+   @media ($mob-max) {
+      max-width: 300px;
+      &__field {
+         &_input {
+            width: 100%;
+            padding-top: 28px;
+         }
+      }
+   }
+}

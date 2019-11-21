@@ -1,0 +1,221 @@
+.header {
+  position: relative;
+  display: flex;
+  background-color: #000;
+  min-height: 341px;
+  padding: 20px 0;
+  &-img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  &_home {
+    min-height: 100vh;
+    padding: 60px 0;
+    .logo {
+      max-width: 200px;
+      position: absolute;
+      top: 78px;
+      left:50%;
+      transform: translate(-50%, -50%);
+      &__link {
+        display: block;
+      }
+    }
+    .nav {
+      padding: 0 36px 39px 94px;
+      display: block;
+      &-list {
+        position: relative;
+        &_header {
+          padding-right: 0;
+        }
+        &__item {
+            &:nth-child(3){
+                align-items: flex-start;
+                flex: 3 0 auto;
+                padding-left: 16px;
+            }
+            &:nth-child(4){
+                align-items: flex-end;
+                flex: 3 0 auto;
+                padding-right: 16px;
+            }
+        }
+      }
+      &-btn {
+        display: none;
+      }
+    }
+    .header-top {
+      display: block;
+    }
+  }
+  &-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &-top {
+    display: flex;
+    flex: 0 0 auto;
+    &.nav-active {
+      nav {
+        transform: translateX(0);
+        transition: transform ease .3s;
+
+      }
+      .icon-menu-1 {
+        &::before {
+          content: '\e800';
+        }
+      }
+    }
+  }
+  &-bottom {
+    position: relative;
+    flex: 1 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+  @media ($tab-max) {
+    padding: 20px 0 0;
+    &_home {
+      padding: 20px 0 60px;
+      .logo {
+        top: 197px;
+      }
+      .nav {
+        top: 0;
+        text-align: left;
+        padding: 100px 25px 40px 50px;
+        transform: translateX(-100%);
+        transition: transform ease .3s;
+        &-list {
+          &__item {
+            align-items: flex-start;
+            &:nth-child(3){
+                align-items: flex-start;
+                flex: 1 0 auto;
+                padding-left: 0;
+            }
+            &:nth-child(4){
+                align-items: flex-start;
+                flex: 1 0 auto;
+                padding-right: 0;
+            }
+          }
+        }
+        &-btn {
+          display: block;
+        }
+      }
+      .mobi-arrows {
+        display: block;
+        padding-bottom: 155px;
+      }
+      .header-top {
+        flex-direction: row;
+        &.nav-active {
+            .mobi-arrows {
+                padding-bottom: 0;
+            }
+        }
+      }
+    }
+    &-top{
+      flex-direction: row-reverse;
+    }
+  }
+  @media ($mob-max) {
+    &_home {
+      padding: 20px 0 0;
+    }
+  }
+}
+
+.msie {
+   .header {
+      &-container {
+         min-height: 300px;
+      }
+      &_home {
+          .header-container {
+            min-height: calc(100vh - 120px);
+          }
+      }
+   }
+   .home-news .slick-dots {
+      right: 0
+   }
+   .callback {
+      max-width: 340px;
+      &__field {
+         button {
+           min-width: 120px;
+        }
+      }
+   }
+   @media ($mob-max) {
+      .callback {
+         max-width: 300px;
+         &__field {
+            button {
+              min-width: 100px;
+              padding: 7px 5px;
+           }
+         }
+      }
+   }
+}
+
+.firefox .callback__field_greed {
+   flex: 0 0 auto;
+}
+
+.firefox {
+   .callback {
+      max-width: 340px;
+      &__field {
+         button {
+           min-width: 120px;
+        }
+      }
+   }
+   @media ($mob-max) {
+      .callback {
+         max-width: 300px;
+         &__field {
+            button {
+              min-width: 100px;
+              padding: 7px 5px;
+           }
+         }
+      }
+   }
+}
+
+.safari {
+  .callback__field button {
+    min-width: 110px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .callback__field_greed {
+    flex: 1 0;
+    &:hover {
+         cursor: text;
+    }
+  }
+  @media (max-width: 1200px) {
+      .home-services-block__title {
+          font-size: 13px;
+      }
+  }
+}

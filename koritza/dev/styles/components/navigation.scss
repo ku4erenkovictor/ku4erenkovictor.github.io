@@ -1,0 +1,28 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+
+  a {
+    border-bottom: 2px solid #303030;
+    transition: ease-in-out color .3s;
+
+    &.next,
+    &.prev {
+      border-bottom: none;
+    }
+
+    &:hover {
+      color: lighten(#4717f6, 15%);
+    }
+  }
+
+  .page-numbers {
+    margin: 0 7px;
+    color: #303030;
+
+    &.current {
+      color: #4717f6;
+    }
+  }
+}
