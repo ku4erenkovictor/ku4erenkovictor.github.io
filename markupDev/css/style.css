@@ -4155,6 +4155,7 @@ body.popup-active .popup-client {
 
 .projects-item {
   display: none;
+  min-height: 285px;
   width: 25%;
   padding: 11px;
 }
