@@ -2,24 +2,28 @@
   font-family: Roboto;
   src: url(../fonts/Roboto-Bold.ttf);
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Roboto;
   src: url(../fonts/Roboto-Light.ttf);
   font-weight: 300;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Roboto;
   src: url(../fonts/Roboto-Medium.ttf);
   font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Roboto;
   src: url(../fonts/Roboto-Regular.ttf);
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -27,6 +31,7 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/icomoon.woff");
+  font-display: swap;
 }
 
 @font-face {
@@ -34,4 +39,5 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/icomoon-2.woff");
+  font-display: swap;
 }
