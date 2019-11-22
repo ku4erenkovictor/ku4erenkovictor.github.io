@@ -218,6 +218,15 @@ textarea {
 	resize: none
 }
 
+.lazyload[data-src] {
+	opacity: 0;
+}
+
+.lazyloaded {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
 .swiper-container,
 .wrapper {
 	position: relative;
