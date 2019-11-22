@@ -109,7 +109,7 @@
 
 $(document).ready(function () {
     
-    new WOW().init();
+    rspHelper();
     initOpenClose();
     stickyHeader();
     cloneMobile();
@@ -189,6 +189,21 @@ $(document).ready(function () {
     }
     loadMoreObj.init();
 });
+
+function rspHelper() {
+
+    ResponsiveHelper.addRange({
+
+        '1023..': {
+            on: function () {
+                new WOW().init();
+            },
+            off: function () {
+                console.log(2)
+            }
+        }
+    });
+}      
 
 window.onscroll = function () {
     scrollFunction();
