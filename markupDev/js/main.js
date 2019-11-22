@@ -108,8 +108,7 @@
 }));
 
 $(document).ready(function () {
-    
-    rspHelper();
+
     initOpenClose();
     stickyHeader();
     cloneMobile();
@@ -190,27 +189,8 @@ $(document).ready(function () {
     loadMoreObj.init();
 });
 
-function rspHelper() {
-
-    ResponsiveHelper.addRange({
-
-        '1023..': {
-            on: function () {
-                new WOW().init();
-            },
-            off: function () {
-                console.log(2)
-            }
-        }
-    });
-}      
-
-window.onscroll = function () {
-    scrollFunction();
-};
-
 function initOpenClose() {
-    jQuery('.column-grid-row').openClose({
+    $('.column-grid-row').openClose({
         activeClass: 'active',
         opener: '[data-opener]',
         slider: '[data-slide]',
@@ -218,6 +198,10 @@ function initOpenClose() {
         effect: 'slide'
     });
 }
+
+window.onscroll = function () {
+    scrollFunction();
+};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
