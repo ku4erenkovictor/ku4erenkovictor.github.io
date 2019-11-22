@@ -1,0 +1,66 @@
+.select-leng {
+  display: inline-block;
+  margin-left: auto;
+
+  @media (min-width: 992px) {
+    margin-left: 25px;
+    border-left: 1px solid #b0b0b0;
+  }
+
+  .custom-select {
+    position: relative;
+    font-size: 16px;
+    min-width: 50px;
+
+    select {
+      display: none;
+    }
+
+    .select-selected {
+      &:after {
+        position: absolute;
+        content: "";
+        top: 12px;
+        right: 4px;
+        width: 0;
+        height: 0;
+        border: 4px solid transparent;
+        border-color: #4d4d4f transparent transparent transparent;
+      }
+
+      &.select-arrow-active {
+        &:after {
+          border-color: transparent transparent #4d4d4f transparent;
+          top: 7px;
+        }
+      }
+    }
+  }
+
+  .select-items div,
+  .select-selected {
+    padding: 0 20px 0 10px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .select-items {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #b0b0b0;
+    top: 100%;
+    left: -1px;
+    right: 0;
+    z-index: 99;
+  }
+
+  .select-hide {
+    display: none;
+  }
+
+  .select-items div:hover,
+  .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+

@@ -1,0 +1,220 @@
+.hero {
+	overflow: hidden;
+	position: relative;
+	padding-top: 135px;
+	padding-bottom: 90px;
+	display: flex;
+
+	&-full {
+		height: 100vh;
+		flex-shrink: 0;
+	}
+
+	&-error {
+		height: calc(100vh - 50px);
+		flex-shrink: 0;
+	}
+
+	&-img {
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%);
+		min-width: 100%;
+		min-height: 100%;
+		max-width: none;
+		width: auto;
+		z-index: -2;
+	}
+	&-decor-l,
+	&-decor-r {
+		position:absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+		z-index: -1;
+		min-width: 1600px;
+	}
+	&-decor-l {
+		background: url(../img/hero-decor-l.png) no-repeat;
+		background-size: cover;
+	}
+	&-decor-r {
+		background: url(../img/hero-decor-r.png) no-repeat;
+		background-size: cover;
+	}
+
+	.container {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container-sm {
+		max-width: 675px;
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 100px;
+		line-height: 1.1;
+		font-weight: 900;
+		margin: 0 auto 90px;
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			right: 0;
+			width: 40%;
+			height: 3px;
+			margin: 0 auto;
+			background: $green;
+		}
+	}
+
+	h2 {
+		max-width: 760px;
+		position: relative;
+		margin: 40px auto 100px;
+		font-size: 30px;
+		text-align: center;
+		line-height: 1.5;
+		font-weight: 500;
+
+		@media (min-width: 576px) {
+			font-size: 40px;
+		}
+
+		@media (min-width: 851px) and (min-width: 576px){
+			font-size: 60px;
+		}
+
+		@media (min-width: 992px) {
+			margin: 0 auto 100px;
+		}
+
+		br {
+			@media (max-width: 450px){
+				display: none;
+			}
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			right: 0;
+			width: 40%;
+			height: 3px;
+			margin: 0 auto;
+			background: $green;
+		}
+	}
+
+	&-min {
+		min-height: 345px;
+
+		@media (min-width: 851px) {
+			min-height: 505px;
+		}
+
+		h2 {
+			margin: 0 auto;
+		}
+	}
+
+	.arrow-down {
+		position: absolute;
+		bottom: 25px;
+		left: 0;
+		right: 0;
+		display: inline-block;
+		width: 24px;
+		margin: 0 auto;
+
+		.arrow-icon {
+			position: relative;
+			display: block;
+			width: 24px;
+			height: 16px;
+			background-image: url("../img/arrow-down.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			-webkit-animation: move-icon 1.5s ease-out 1s infinite;
+			animation: move-icon 1.5s ease-out 1s infinite;
+		}
+
+		@-webkit-keyframes move-icon {
+			0% {
+				top: 6px;
+			}
+			25% {
+				top: 3px;
+			}
+			50% {
+				top: 0;
+			}
+			75% {
+				top: 3px;
+			}
+			100% {
+				top: 6px;
+			}
+		}
+
+		@keyframes move-icon {
+			0% {
+				top: 6px;
+			}
+			25% {
+				top: 3px;
+			}
+			50% {
+				top: 0;
+			}
+			75% {
+				top: 3px;
+			}
+			100% {
+				top: 6px;
+			}
+		}
+	}
+
+	&-content-img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-grow: 1;
+
+		img {
+			max-width: 1000px;
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 1200px) {
+		h1 {
+			font-size: 70px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		padding: 125px 0 65px;
+
+		h1 {
+			font-size: 50px;
+			margin-bottom: 50px;
+		}
+	}
+}
