@@ -44,6 +44,15 @@ p {
 	margin: 0 0 15px;
 }
 
+.lazyload[data-src] {
+	opacity: 0;
+}
+
+.lazyloaded {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
 %list-reset {
 	list-style: none;
 	margin: 0;
@@ -57,3 +66,4 @@ p {
 		clear: both;
 	}
 }
+
