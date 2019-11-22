@@ -74,7 +74,7 @@
 
 					</div>
 					<div class="media-info__img wow flipInX" data-wow-offset="200">
-						<img src="images/cases/steeltruck/img-02.png" alt="image description" class="revealator-slideup">
+						<img data-src="images/cases/steeltruck/img-02.png" alt="image description" class="revealator-slideup lazyload">
 					</div>
 				</article>
 
@@ -89,7 +89,7 @@
 						</ul>
 					</div>
 					<div class="media-info__img wow flipInX" data-wow-offset="200">
-						<img src="images/cases/steeltruck/img-03.png" alt="image description" class="revealator-slideup">
+						<img data-src="images/cases/steeltruck/img-03.png" alt="image description" class="revealator-slideup lazyload">
 					</div>
 				</article>
 
@@ -100,7 +100,7 @@
 						<p class="wow bounceInLeft" data-wow-offset="120">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
 					<div class="media-info__img wow flipInX" data-wow-offset="200">
-						<img src="images/cases/steeltruck/img-04.png" alt="image description" class="revealator-slideup">
+						<img data-src="images/cases/steeltruck/img-04.png" alt="image description" class="revealator-slideup lazyload">
 					</div>
 				</article>
 
@@ -110,14 +110,14 @@
 						<p class="wow fadeInUp" data-wow-offset="120">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
 					<div class="video-block__content wow fadeInUp" data-wow-offset="120">
-						<iframe src="https://www.youtube.com/embed/M7lc1UVf-VE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+						<iframe class="lazyload" data-src="https://www.youtube.com/embed/M7lc1UVf-VE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
 					</div>
 				</div>
 			</div>
       <section class="contact">
         <div class="contact-map wow fadeInLeft" data-wow-offset="120">
-          <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6098.821629519262!2d36.21645211699125!3d50.00688251532851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a11928dc236f%3A0x6a443602ed4782f2!2sMarkupDev!5e0!3m2!1sen!2sua!4v1556620477122!5m2!1sen!2sua" allowfullscreen></iframe>
+          <iframe class="lazyload"
+          data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6098.821629519262!2d36.21645211699125!3d50.00688251532851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a11928dc236f%3A0x6a443602ed4782f2!2sMarkupDev!5e0!3m2!1sen!2sua!4v1556620477122!5m2!1sen!2sua" allowfullscreen></iframe>
         </div>
         <div class="contact-box">
           <form action="#" class="contact-form">
@@ -194,15 +194,7 @@
 		</div>
 	</a>
 	<script>function loadCSS(hf) { var ms = document.createElement("link");ms.rel = "stylesheet";ms.href = hf;document.getElementsByTagName("head")[0].appendChild(ms); } loadCSS("css/_fonts.css");</script><script>
-         var scr = { "scripts": [{ "src": "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js", "async": false }, { "src": "js/wow.min.js", "async": false }, { "src": "js/swiper.js", "async": false }, { "src": "js/headroom.min.js", "async": false }, { "src": "js/hammer-2.0.6.min.js", "async": false }, { "src": "js/mobMenu.js", "async": false }, { "src": "js/jquery.open-close.js", "async": false }, { "src": "js/jquery.popup.js", "async": false }, { "src": "js/jqueryTabs.js", "async": false }, { "src": "js/main.js", "async": false } ] };!function(t, n, r) { "use strict"; var c = function(t) { if ("[object Array]" !== Object.prototype.toString.call(t)) return !1; for (var r = 0; r < t.length; r++) { var c = n.createElement("script"),e = t[r];c.src = e.src, c.async = e.async, n.body.appendChild(c) } return !0 };t.addEventListener ? t.addEventListener("load", function() { c(r.scripts); }, !1) : t.attachEvent ? t.attachEvent("onload", function() { c(r.scripts) }) : t.onload = function() { c(r.scripts) } }(window, document, scr);
-      </script>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108377191-1"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         gtag('config', 'UA-108377191-1');
+         var scr = { "scripts": [{ "src": "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js", "async": false }, { "src": "js/wow.min.js", "async": false }, { "src": "js/lazysizes.min.js", "async": false }, { "src": "js/headroom.min.js", "async": false }, { "src": "js/hammer-2.0.6.min.js", "async": false }, { "src": "js/mobMenu.js", "async": false }, { "src": "js/jquery.open-close.js", "async": false }, { "src": "js/jquery.popup.js", "async": false }, { "src": "js/jqueryTabs.js", "async": false }, { "src": "js/swiper.js", "async": false }, { "src": "js/main.js", "async": false } ] };!function(t, n, r) { "use strict"; var c = function(t) { if ("[object Array]" !== Object.prototype.toString.call(t)) return !1; for (var r = 0; r < t.length; r++) { var c = n.createElement("script"),e = t[r];c.src = e.src, c.async = e.async, n.body.appendChild(c) } return !0 };t.addEventListener ? t.addEventListener("load", function() { c(r.scripts); }, !1) : t.attachEvent ? t.attachEvent("onload", function() { c(r.scripts) }) : t.onload = function() { c(r.scripts) } }(window, document, scr);
       </script>
 </body>
 </html>
