@@ -1,0 +1,29 @@
+.product-info{
+	display: flex;
+	flex-wrap: wrap;
+	&__img{
+		width: 45%;
+		img{
+			max-width: 250px;
+		    padding: 20px;
+		}
+	}
+	.product-gallery{
+		width: 45%;
+	}
+	.description{
+		width: 55%;
+	}
+	@media (max-width: 767px){
+		&__img{
+			width: 100%;
+			img{
+				margin: 0 auto;
+			}
+		}
+		.product-gallery,
+		.description{
+			width: 100%;
+		}
+	}
+}
