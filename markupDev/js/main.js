@@ -109,6 +109,7 @@
 
 $(document).ready(function () {
 
+    new WOW().init();
     initOpenClose();
     stickyHeader();
     cloneMobile();
