@@ -2,7 +2,6 @@
  * Custom scripts
  */
 (function ($) {
-    new WOW().init();
     initNav()
     moveHexagon();
     initScrollCounter();
