@@ -3894,16 +3894,7 @@ function tabs(parent, link) {
             }
         }
     })();
-
-    // $('.home-gallery-inner').masonry({
-    //     columnWidth: '.home-gallery__item',
-    //     itemSelector: '.home-gallery__item',
-    //     percentPosition: true,
-    //     // gutter: 10,
-    //     horizontalOrder: false
-    // });
-
-
+    
 // mobile menu init
     function initMobileNav() {
         ResponsiveHelper.addRange({
