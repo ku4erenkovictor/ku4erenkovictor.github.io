@@ -268,7 +268,6 @@
   src: url("../fonts/NotoSans/NotoSans.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSans/NotoSans.ttf") format("truetype"), url("../fonts/NotoSans/NotoSans.woff") format("woff"), url("../fonts/NotoSans/NotoSans.woff2") format("woff2"), url("../fonts/NotoSans/NotoSans.svg#HelveticaLT-UltraCompressed") format("svg");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -277,7 +276,6 @@
   src: url("../fonts/RobotoRegular/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/Roboto-Regular.ttf") format("truetype"), url("../fonts/RobotoRegular/Roboto-Regular.woff") format("woff"), url("../fonts/RobotoRegular/Roboto-Regular.woff2") format("woff2"), url("../fonts/RobotoRegular/Roboto-Regular.svg#HelveticaLT-UltraCompressed") format("svg");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -286,7 +284,6 @@
   src: url("../fonts/RobotoMedium/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMedium/Roboto-Medium.ttf") format("truetype"), url("../fonts/RobotoMedium/Roboto-Medium.woff") format("woff"), url("../fonts/RobotoMedium/Roboto-Medium.woff2") format("woff2"), url("../fonts/RobotoMedium/Roboto-Medium.svg#HelveticaLT-UltraCompressed") format("svg");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -295,7 +292,6 @@
   src: url("../fonts/RobotoLight/Roboto-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/Roboto-Italic.ttf") format("truetype"), url("../fonts/RobotoLight/Roboto-Italic.woff") format("woff"), url("../fonts/RobotoLight/Roboto-Italic.woff2") format("woff2"), url("../fonts/RobotoLight/Roboto-Italic.svg#HelveticaLT-UltraCompressed") format("svg");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -304,7 +300,6 @@
   src: url("../fonts/RobotoLightItalic/Roboto-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLightItalic/Roboto-LightItalic.ttf") format("truetype"), url("../fonts/RobotoLightItalic/Roboto-LightItalic.woff") format("woff"), url("../fonts/RobotoLightItalic/Roboto-LightItalic.woff2") format("woff2"), url("../fonts/RobotoLightItalic/Roboto-LightItalic.svg#HelveticaLT-UltraCompressed") format("svg");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -313,7 +308,6 @@
   src: url("../fonts/Arabella/Arabella_Swash.eot?#iefix") format("embedded-opentype"), url("../fonts/Arabella/Arabella_Swash.ttf") format("truetype"), url("../fonts/Arabella/Arabella_Swash.woff") format("woff"), url("../fonts/Arabella/Arabella_Swash.woff2") format("woff2"), url("../fonts/Arabella/Arabella_Swash.svg#HelveticaLT-UltraCompressed") format("svg");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -322,7 +316,6 @@
   src: url("../fonts/fontello/fontello.eot?23192118#iefix") format("embedded-opentype"), url("../fonts/fontello/fontello.woff2?23192118") format("woff2"), url("../fonts/fontello/fontello.woff?23192118") format("woff"), url("../fonts/fontello/fontello.ttf?23192118") format("truetype"), url("../fonts/fontello/fontello.svg?23192118#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
