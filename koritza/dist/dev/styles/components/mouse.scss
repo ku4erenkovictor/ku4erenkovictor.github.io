@@ -1,0 +1,18 @@
+.mouse {
+  width: 18px;
+  height: 26px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  &__link {
+    display: block;
+    &:hover {
+      transform: translateY(-30px);
+    }
+  }
+  @media ($mob-max) {
+    display: none;
+  }
+}
