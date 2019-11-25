@@ -1989,6 +1989,7 @@ p {
 
 .map-block__item img {
   height: 100%;
+  width: 100%;
 }
 
 .map-block__address {
