@@ -8,6 +8,7 @@
   url('../fonts/NotoSans/NotoSans.svg#HelveticaLT-UltraCompressed') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +21,7 @@
   url('../fonts/RobotoRegular/Roboto-Regular.svg#HelveticaLT-UltraCompressed') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -32,6 +34,7 @@
   url('../fonts/RobotoMedium/Roboto-Medium.svg#HelveticaLT-UltraCompressed') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -44,6 +47,7 @@
   url('../fonts/RobotoLight/Roboto-Italic.svg#HelveticaLT-UltraCompressed') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -56,6 +60,7 @@
   url('../fonts/RobotoLightItalic/Roboto-LightItalic.svg#HelveticaLT-UltraCompressed') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -68,6 +73,7 @@
   url('../fonts/Arabella/Arabella_Swash.svg#HelveticaLT-UltraCompressed') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Molle:400i');
@@ -83,6 +89,7 @@
   url('../fonts/fontello/fontello.svg?23192118#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
