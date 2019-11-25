@@ -2928,6 +2928,7 @@ p {
 }
 
 .main {
+  overflow: hidden;
   background-color: #f9f9f9;
 }
 
