@@ -1,0 +1,36 @@
+.see-also{
+	margin: 0 0 30px;
+	&__title{
+		text-align: center;
+		background: #f8f8f8;
+	    font-size: 21px;
+	    line-height: 1.2;
+	    text-transform: uppercase;
+	    padding: 5px 10px;
+	    margin: 0 0 20px;
+	}
+	&__hold{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.product{
+		width: 25%;
+	}
+	@media (max-width: 767px){
+		margin: 0 0 20px;
+		&__hold{
+			justify-content: center;
+		}
+		&__title{
+			font-size: 18px;
+		}
+    	.product{
+    		width: 33.3%;
+		}
+	}
+	@media (max-width: 539px){
+		.product{
+			width: 50%;
+		}
+	}
+}

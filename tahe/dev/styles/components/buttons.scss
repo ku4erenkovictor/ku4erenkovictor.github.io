@@ -1,0 +1,18 @@
+.btn {
+	&-top{
+		position: fixed;
+	    background: url(../img/btn-top.png) no-repeat;
+	    background-size: cover;
+	    width: 55px;
+	    height: 55px;
+	    right: 20px;
+	    bottom: 20px;
+	    z-index: 99999;
+	    opacity: 0;
+	    transition: opacity 0.2s ease;
+	    @media (max-width: 1023px){
+	    	width: 35px;
+	    	height: 35px;
+        }
+	}
+}

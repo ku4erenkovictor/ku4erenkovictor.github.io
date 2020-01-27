@@ -1,0 +1,17 @@
+.social-list {
+  display: flex;
+  justify-content: flex-start;
+  &__item {}
+  &__link {
+    font-size: 34px;
+    color: #592273;
+    transition: color ease .25s;
+    &:hover {
+      color: #a239ca;
+      transition: color ease .25s;
+    }
+  }
+  @media ($mob-max) {
+    justify-content: center;
+  }
+}

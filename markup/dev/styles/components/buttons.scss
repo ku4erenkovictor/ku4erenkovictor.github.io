@@ -1,0 +1,28 @@
+.btn {
+  height: 36px;
+  padding: 10px;
+  background: transparent;
+  border: 2px solid $green;
+  color: $dark-grey;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: background 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: $green;
+    color: $white;
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+
+    &:hover {
+      background: transparent;
+      color: $dark-grey;
+    }
+  }
+}

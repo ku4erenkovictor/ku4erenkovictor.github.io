@@ -1,0 +1,59 @@
+.banner-gallery{
+	overflow: hidden;
+	margin: 0 0 100px;
+	&__item{
+		overflow: hidden;
+	}
+	.slick-dots{
+		position: absolute;
+		display: flex;
+		right: 90px;
+		bottom: 33px;
+		z-index: 99;
+		li{
+			margin: 0;
+		    button{
+		    	opacity: 1;
+		    	background: rgba(255, 255, 255, 0.5);
+			    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+		    }
+		    &.slick-active button{
+		    	background: $white-color;
+		    }
+		}
+	}
+	.slick-arrow{
+		position: absolute;
+		background: transparent;
+		width: 28px;
+    	height: 28px;
+    	font-size: 0;
+    	line-height: 0;
+    	bottom: 28px;
+    	z-index: 99;
+	}
+	.slick-prev{
+		background: url(../img/sprite.png) no-repeat -66px -34px;
+		right: 55px;
+	}
+	.slick-next{
+		background: url(../img/sprite.png) no-repeat -66px -66px;
+		right: 20px;
+	}
+	@media (max-width: 1023px){
+		margin: 0 0 50px;
+		.slick-dots{
+			bottom: 15px;
+		}
+		.slick-arrow{
+			bottom: 10px;
+		}
+	}
+	@media (max-width: 767px){
+		margin: 0 0 30px;
+		.slick-dots,
+		.slick-arrow{
+			display: none!important;
+		}
+	}
+}
