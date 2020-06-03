@@ -1,0 +1,78 @@
+body {
+	min-width: 320px;
+	font: 19px/1.2 'SFUIDisplay-Regular', helvetica, sans-serif;
+	background: #e7e8e8;
+	color: #535251;
+}
+
+button,
+[type=reset],
+[type=submit],
+[type=image],
+a {
+	-webkit-transition: background-color .2s, color .2s;
+	transition: background-color .2s, color .2s;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+i,
+em {
+	font-style: italic;
+}
+
+p {
+	margin: 0 0 20px;
+}
+
+.container {
+	max-width: 1222px;
+	width: 100%;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.title {
+	text-align: center;
+	font: 25px/1.2 'SFUIDisplay-Regular', sans-serif;
+	margin: 0 0 40px;
+	h1 {
+		margin: 0 0 5px;
+	}
+	&-sub {
+		margin: 0 0 10px;
+	}
+	@media (max-width: 767px) {
+		font: 18px/1.2 'SFUIDisplay-Regular', sans-serif;
+		margin: 0 0 20px;
+	}
+}
+
+h1 {
+	font: 36px/1.2 'SFUIDisplay-Medium', sans-serif;
+	margin: 0 0 20px;
+	@media (max-width: 767px) {
+		font: 28px/1.2 'SFUIDisplay-Medium', sans-serif;
+	}
+}
+
+h2 {
+	font: 28px/1.2 'SFUIDisplay-Bold', sans-serif;
+	margin: 0 0 20px;
+	@media (max-width: 767px) {
+		font: 22px/1.2 'SFUIDisplay-Bold', sans-serif;
+	}
+}

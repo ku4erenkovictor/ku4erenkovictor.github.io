@@ -1,0 +1,135 @@
+.slider {
+	margin: 0 0 20px;
+    .slick-list {
+    	margin: 0 0 10px;
+    }
+    &-wrap {
+    	overflow: hidden;
+    	background: rgb(245,247,246);
+        background: linear-gradient(to right, rgba(245,247,246,1) 0%, rgba(193,191,192,1) 100%);
+        border: 1px solid #161617;
+    }
+	&-item {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&-box {
+		width: 44%;
+		padding: 45px 45px 30px;
+		color: #676767;
+	}
+	&-title {
+		color: #f04a24;
+		margin: 0 0 40px;
+		&__top {
+			display: block;
+			font: 40px/1 'MyriadPro-Semibold', sans-serif;
+			sup {
+				font: 26px/1 'MyriadPro-Semibold', sans-serif;
+				vertical-align: top;
+				margin: 0 0 0 -10px;
+			}
+		}
+		&__bottom {
+			display: block;
+			font: 25px/1 'MyriadPro-Semibold', sans-serif;
+			padding: 5px 0 0;
+		}
+		&__big {
+			display: flex;
+			font: 224px/1 'MyriadPro-BlackSemiCn', sans-serif;
+			letter-spacing: -25px;
+			margin: -25px 0 -28px -12px;
+			&-wrap {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				letter-spacing: 0;
+				padding: 0 25px;
+				sup {
+					font: 92px/1 'MyriadPro-BlackSemiCn', sans-serif;
+				}
+				span {
+					font: 110px/1 'MyriadPro-BlackSemiCn', sans-serif;
+					margin: -18px 0 0;
+				}
+			}
+		}
+		
+	}
+	&-text {
+		max-width: 125px;
+		width: 100%;
+		font-size: 12px;
+		line-height: 1.2;
+		margin: 0 0 10px;
+	}
+	&-img {
+		display: flex;
+    	align-items: flex-end;
+		width: 56%;
+	}
+	@media (max-width: 1219px) {
+		&-box {
+		    padding: 35px 20px 20px;
+		}
+		&-title {
+			&__big {
+				font: 180px/1 'MyriadPro-BlackSemiCn', sans-serif;
+				&-wrap {
+					padding: 0 20px;
+					sup {
+						font: 72px/1 'MyriadPro-BlackSemiCn', sans-serif;
+					}
+					span {
+						font: 90px/1 'MyriadPro-BlackSemiCn', sans-serif;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 1023px) {
+		&-box {
+			width: 35%;
+		}
+		&-title {
+			margin: 0 0 15px;
+			&__big {
+				font: 100px/1 'MyriadPro-BlackSemiCn', sans-serif;
+				letter-spacing: -10px;
+				margin: -10px 0 -15px -12px;
+				&-wrap {
+					padding: 0 15px;
+					sup {
+						font: 36px/1 'MyriadPro-BlackSemiCn', sans-serif;
+					}
+					span {
+						font: 66px/1 'MyriadPro-BlackSemiCn', sans-serif;
+					}
+				}
+			}
+			&__top {
+				font: 24px/1 'MyriadPro-Semibold', sans-serif;
+				sup {
+					font: 16px/1 'MyriadPro-Semibold', sans-serif;
+					margin: 0 0 0 -5px;
+				}
+			}
+			&__bottom {
+				font: 16px/1 'MyriadPro-Semibold', sans-serif;
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		margin: 0 -21px 20px;
+		&-box {
+			width: 100%;
+			padding: 20px;
+		}
+		&-img {
+			width: 75%;
+			margin: 0 0 0 auto;
+		}
+	}
+}

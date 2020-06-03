@@ -1,0 +1,17 @@
+.logo {
+	flex-shrink: 0;
+	display: block;
+	max-width: 216px;
+	width: 100%;
+	margin: 0 15px 0 0;
+	transition: opacity 0.2s linear;
+	img {
+		width: 100%;
+	}
+	@media (max-width: 1023px) {
+		max-width: 150px;
+	}
+	@media (max-width: 767px) {
+		margin: 0 auto 15px;
+	}
+}

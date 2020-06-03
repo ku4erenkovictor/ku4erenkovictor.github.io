@@ -1,0 +1,33 @@
+.header {
+	background: #181718;
+	&-top {
+		text-align: center;
+		background: #e7e8e8;
+		font-family: "SFUIDisplay-Bold";
+		text-transform: uppercase;
+		padding: 10px 0;
+	}
+	&-bottom {
+		padding: 30px 0 35px;
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	&-box {
+		display: flex;
+		align-items: center;
+	}
+	@media (max-width: 767px) {
+		&-bottom {
+			padding: 20px 0;
+			.container {
+				flex-direction: column;
+			}
+		}
+		&-box {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.basket {
+	position: relative;
+	display: flex;
+	font-size: 36px;
+	color: #fff;
+	transition: color .2s ease;
+	&-value {
+		position: absolute;
+		background: #e73f30;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 22px;
+		min-width: 22px;
+		font-size: 16px;
+		line-height: 1;
+		color: #fff;
+		padding: 2px 5px;
+		border-radius: 100px;
+		top: 0;
+		right: -8px;
+	}
+	.no-touch & {
+		&:hover {
+			color: #e73f30;
+		}
+	}
+}

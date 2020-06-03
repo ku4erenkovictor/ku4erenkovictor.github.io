@@ -1,0 +1,26 @@
+.list-social {
+	display: flex;
+	flex-wrap: wrap;
+	&__item {
+		margin: 0 5px 10px;
+	}
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #929497;
+		height: 32px;
+		width: 32px;
+		font-size: 14px;
+		line-height: 1;
+		color: #181718;
+		border-radius: 50%;
+		border: 1px solid #080707;
+		transition: background .2s ease;
+		.no-touch & {
+			&:hover {
+				background: #e73f30;
+			}
+		}
+	}
+}
