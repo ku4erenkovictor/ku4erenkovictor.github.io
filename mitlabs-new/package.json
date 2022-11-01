@@ -11,7 +11,7 @@
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "compass-mixins": "^0.12.10",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-cache": "^1.0.2",
     "gulp-compass": "^2.1.0",
